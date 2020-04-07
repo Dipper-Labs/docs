@@ -8,12 +8,12 @@
 
 ## 申请测试token
 
-水龙头地址： ```https://docs.DipperNetwork.org/dip/get_token?<address>```  
+水龙头地址： ```https://docs.dipperNetwork.com/dip/get_token?<address>```  
 浏览器访问该地址，将```<address>```替换为你的钱包地址即可获得测试token
 
 ## 如何查看是否获得测试Token
 
-**方法1** 通过区块浏览器查看```https://explorer.DipperNetwork.org/account/<address>``` 其中```<address>```为你的dip地址
+**方法1** 通过区块浏览器查看```https://explorer.dippernetwork.com/account/<address>``` 其中```<address>```为你的dip地址
 
 **方法2** 通过dipcli查看, 使用下列命令进行查看，address为你的dip地址
 

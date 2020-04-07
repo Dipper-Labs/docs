@@ -3,12 +3,12 @@ module.exports = {
         '/en/': {
             lang: 'en-US',
             title: "DipperNetwork Document",
-            description: "Decentralized finance protocol\n"
+            description: "Make You and Your Personal Network Unique\n"
         },
         '/': {
             lang: 'zh-CN',
             title: 'DipperNetwork文档',
-            description: '开放金融网络\n'
+            description: '去中心化的普惠金融网络\n'
         }
     },
     head: [
@@ -96,6 +96,7 @@ module.exports = {
                     '/get-started/': genSidebarConfig ('get-started', '快速开始'),
                     '/software/': genSidebarConfig ('software', '软件'),
                     '/applications/': genSidebarConfig ('applications', '应用'),
+                    '/im/': genSidebarConfig ('im', '即时通讯服务器部署'),
                     '/advanced/': genSidebarConfig('advanced', '高级教程')
                 }
             }
@@ -142,8 +143,6 @@ function genSidebarConfig (module, title) {
                 collapsable: false,
                 children: [
                     'api',
-                    'ipal',
-                    'ipal-sdk',
                     'multisig',
                     'keys',
                     'how-to-create-proposal',

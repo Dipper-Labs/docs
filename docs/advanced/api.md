@@ -351,129 +351,6 @@ response:
 curl -X POST "http://127.0.0.1:1317/txs" -H "accept: application/json" -H "Content-Type: application/json" -d "{transaction msg}"
 ```
 
-## ipal相关 API
-
-### 注册ipal节点
-
-目前不提供api，通过命令行完成
-
-``` bash
-# 该命令以交互的方式创建账号aipaltest并关联相应的公钥账号，需要输入两次密码来创建账号，私钥通过密码加密，相当于生成keystore，同时会输出24个单词的助记词
-dipcli keys add ipaltest
-
-# 向aipaltest账号转账，sky也需要创建账号，并申请测试token，申请方法(TODO: url)
-dipcli send --from $(dipcli keys show sky -a) --to $(dipcli keys show ipaltest -a) --amount 2000000pdip
-
-# 在区块链上注册服务节点，各个参数的含义请执行dipcli aipal cliam -h查看
-dipcli ipal claim --from=$(dipcli keys show ipaltest -a) --moniker=ipaltest  --website=sky.com --details="dip up" --endpoints "1|192.168.1.100:02" --bond=1000000pdip
-```
-
-### 查询服务节点列表
-
-rest接口查询
-
- ```bash
-curl http://127.0.0.1:1317/ipal/list
-```
-
-response:
-
-```json
-{
-  "height": "66",
-  "result": [
-    {
-      "operator_address": "dip1njcjlsgd59gnjhz3yy0u6sqntcelexdahggnsr",
-      "moniker": "ipaltest",
-      "website": "sky.com",
-      "details": "dip up",
-      "endpoints": [
-        {
-          "type": "1",
-          "endpoint": "192.168.1.100:02"
-        }
-      ],
-      "bond": {
-        "denom": "pdip",
-        "amount": "1000000"
-      }
-    }
-  ]
-}
-```
-
-### 根据地址查询IPAL
-rest接口查询
-
-```bash
-curl http://127.0.0.1:1317/ipal/node/{addr}
-
-e.g.
-curl http://127.0.0.1:1317/ipal/node/dip19uspwrym4wr366teytlu4hre9rs7afsf33dgcy
-```
-
-response:
-
-```json
-{
-  "height": "10005",
-  "result": {
-    "operator_address": "dip19uspwrym4wr366teytlu4hre9rs7afsf33dgcy",
-    "moniker": "aipaltest",
-    "website": "sky.com",
-    "details": "dip up",
-    "endpoints": [
-      {
-        "type": "1",
-        "endpoint": "192.168.1.100:02"
-      }
-    ],
-    "bond": {
-      "denom": "pdip",
-      "amount": "1400000"
-    }
-  }
-}
-```
-
-### cipal API
-
-### 根据地址查询CIPAL
-
-rest接口查询
-
-```bash
-curl http://127.0.0.1:1317/cipal/query/{addr}
-
-e.g. 已经注册
-curl http://127.0.0.1:1317/cipal/query/dip12zsau56la368qs23f6nmn2kfe6er6d5gue7u7g
-```
-
-response:
-
-```json
-{
-  "height": "480",
-  "result": {
-    "user_address": "dip12zsau56la368qs23f6nmn2kfe6er6d5gue7u7g",
-    "service_infos": [
-      {
-        "type": "1",
-        "address": "dip1f94fzxp6hthrx3gzy4dmj6ccwh2xljuyzlwj8t"
-      }
-    ]
-  }
-}
-
-e.g. 没有注册
-curl http://127.0.0.1:1317/cipal/query/dip1a6hy8k6hscffcjgpggjs9dru4x4g58znj6pn0z
-
-{
-  "height": "446",
-  "result": null
-}
-```
-
 ## 合约相关API
 
 ### 查询合约代码
@@ -556,7 +433,7 @@ response:
 
 #### 调用合约
 
-调用合约的payload要根据调用方法的abi来构造，可参考代码 https://github.com/DipperNetwork/DipperNetwork-chain/blob/develop/modules/vm/client/cli/query.go 的GetCmdQueryCallFee函数
+调用合约的payload要根据调用方法的abi来构造，可参考代码 https://github.com/DipperNetwork/Dipper-Protocol/blob/develop/modules/vm/client/cli/query.go 的GetCmdQueryCallFee函数
 
 request:
 

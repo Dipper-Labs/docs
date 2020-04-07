@@ -12,11 +12,11 @@ actionLink: /introduction/
   </div>
   <div class="feature">
     <h2>可用性</h2>
-    <p>DipperNetwork底层包含基础通信协议，可实现点对点通信，其他开发工具都会开源，适合二次应用开发。</strong></p>
+    <p>DipperNetwork底层包含基础通信协议，可实现点对点通信，其他开发工具全部开源，服务于二次应用开发。</strong></p>
   </div>
   <div class="feature">
     <h2>可扩展性</h2>
-    <p>DipperNetwork设计上采用了多层账本结构，通过增加账本，应对未来各类场景所需的可扩展性。</p>
+    <p>DipperNetwork设计上采用了多层账本结构和Layer2扩容方案，应对未来各类场景所需的可扩展性。</p>
   </div>
 </div>
 

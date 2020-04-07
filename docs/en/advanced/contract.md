@@ -4,9 +4,9 @@ Configure development environment and dependencies, refer to [here](../software/
 ## Source code compilation
 
 ```bash
-git clone https://github.com/DipperNetwork/DipperNetwork-chain.git
+git clone https://github.com/Dipper-Labs/Dipper-Protocol.git
 
-cd DipperNetwork-chain && git checkout testnet
+cd Dipper-Protocol && git checkout testnet
 
 make install
 ```

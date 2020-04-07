@@ -30,6 +30,12 @@ dipcli query tx [hash]
 dipcli query staking validators
 ```
 
+### 查询IPAL列表
+
+```bash
+dipcli query ipal list
+```
+
 ## 交易
 
 ### 转帐

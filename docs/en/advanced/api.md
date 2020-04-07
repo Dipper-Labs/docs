@@ -23,111 +23,6 @@ curl http://rpc.DipperNetwork.org/blocks/{height}
 curl -X POST "http://rpc.DipperNetwork.org/txs" -H "accept: application/json" -H "Content-Type: application/json" -d "{transaction msg}"
 ```
 
-### IPAL API
-
-* Register ipal node with command line
-
-```bash
-# This command creates an account interactively. The private key is encrypted with a password.
-dipcli keys add <key name>
-
-# Transfer
-dipcli send --from $(dipcli keys show <key name2> -a) --to $(dipcli keys show <key name> -a) --amount 2000000pdip
-
-# Register the service node on the blockchain. For the meaning of each parameter, please execute dipcli aipal cliam -h
-dipcli ipal claim --from=$(dipcli keys show <key name> -a) --moniker=<node name>  --website=<website>--details="dip up" --endpoints "1|192.168.1.100:02" --bond=1000000pdip
-```
-
-* Query service node list
-
- ```bash
-curl http://rpc.DipperNetwork.org/ipal/list
-
-response:
-{
-  "height": "66",
-  "result": [
-    {
-      "operator_address": "dip1njcjlsgd59gnjhz3yy0u6sqntcelexdahggnsr",
-      "moniker": "ipaltest",
-      "website": "sky.com",
-      "details": "dip up",
-      "endpoints": [
-        {
-          "type": "1",
-          "endpoint": "192.168.1.100:02"
-        }
-      ],
-      "bond": {
-        "denom": "pdip",
-        "amount": "1000000"
-      }
-    }
-  ]
-}
-```
-
-* Querying IPAL by Address
-
-```bash
-curl http://rpc.DipperNetwork.org/ipal/node/{addr}
-
-e.g.
-curl http://rpc.DipperNetwork.org/ipal/node/dip19uspwrym4wr366teytlu4hre9rs7afsf33dgcy
-
-{
-  "height": "10005",
-  "result": {
-    "operator_address": "dip19uspwrym4wr366teytlu4hre9rs7afsf33dgcy",
-    "moniker": "aipaltest",
-    "website": "sky.com",
-    "details": "dip up",
-    "endpoints": [
-      {
-        "type": "1",
-        "endpoint": "192.168.1.100:02"
-      }
-    ],
-    "bond": {
-      "denom": "pdip",
-      "amount": "1400000"
-    }
-  }
-}
-```
-
-### CIPAL API
-
-* Querying CIPAL by Address
-
-```bash
-curl http://rpc.DipperNetwork.org/cipal/query/{addr}
-
-e.g. Already registered
-curl http://rpc.DipperNetwork.org/cipal/query/dip12zsau56la368qs23f6nmn2kfe6er6d5gue7u7g
-
-{
-  "height": "480",
-  "result": {
-    "user_address": "dip12zsau56la368qs23f6nmn2kfe6er6d5gue7u7g",
-    "service_infos": [
-      {
-        "type": "1",
-        "address": "dip1f94fzxp6hthrx3gzy4dmj6ccwh2xljuyzlwj8t"
-      }
-    ]
-  }
-}
-
-e.g. unregistered
-http://rpc.DipperNetwork.org/cipal/query/dip1a6hy8k6hscffcjgpggjs9dru4x4g58znj6pn0z
-
-{
-  "height": "446",
-  "result": null
-}
-```
-
 ### Query transaction by transaction hash
 
 ```bash
@@ -294,7 +189,7 @@ response:
 
 #### Call contracts
 
-You need to create payload according to the abi of call methods. You can refer to function of GetCmdQueryCallFee in https://github.com/DipperNetwork/DipperNetwork-chain/blob/develop/modules/vm/client/cli/query.go 
+You need to create payload according to the abi of call methods. You can refer to function of GetCmdQueryCallFee in https://github.com/DipperNetwork/Dipper-Protocol/blob/develop/modules/vm/client/cli/query.go 
 
 request:
 ```bash

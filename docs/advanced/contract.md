@@ -7,8 +7,8 @@
 ## 源码编译
 
 ```bash
-git clone https://github.com/DipperNetwork/DipperNetwork-chain.git
-cd DipperNetwork-chain && git checkout testnet
+git clone https://github.com/Dipper-Labs/Dipper-Protocol.git
+cd Dipper-Protocol && git checkout testnet
 
 make install
 ```

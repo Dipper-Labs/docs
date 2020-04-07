@@ -281,5 +281,5 @@ slash_fraction_double_sign:0.5 %
 
 * 部署节点监控工具，点击[这里](../software/monitor.md)
 * 查看常见问题，点击[这里](../advanced/Q&A.md)
-* 测试区块浏览器地址： <https://explorer.DipperNetwork.org>
+* 测试区块浏览器地址： <https://explorer.dippernetwork.com>
 * 申请测试token，点击[这里](testcoin.md)

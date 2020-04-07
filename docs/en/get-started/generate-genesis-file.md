@@ -1,6 +1,6 @@
-## Testnet gentx files
+# Testnet gentx files
 
-### Requirement
+## Requirement
 
 Recommended server configuration:
 
@@ -13,12 +13,12 @@ Recommended server configuration:
 
 To install and configure go, click [here](../software/go-install.md)
 
-#### Build dip from source code
+### Build dip from source code
 
 ```bash
 # Get dip source code
-git clone https://github.com/DipperNetwork/DipperNetwork-chain.git
-cd DipperNetwork-chain && git checkout testnet-v1.1.0
+git clone https://github.com/Dipper-Labs/Dipper-Protocol.git
+cd Dipper-Protocol && git checkout testnet-v1.1.0
 
 # Install statik
 sudo apt-get update
@@ -32,13 +32,13 @@ dipd version
 dipcli version
 ```
 
-### 1. Create an account
+## 1. Create an account
 
 ```bash
 dipcli keys add <key_name>
 ```
 
-### 2. Initialize your node
+## 2. Initialize your node
 
 ```bash
 dipd init --moniker=<node_name> --chain-id dip-testnet
@@ -46,7 +46,7 @@ dipd init --moniker=<node_name> --chain-id dip-testnet
 
 This command will create the genesis& config files in the home directory(~/.dipd/ by default).
 
-### 3. Execute gentx command
+## 3. Execute gentx command
 
 ```bash
 dipd gentx \
@@ -69,6 +69,6 @@ min_self_delegation: 1pdip
 
 You could also change thesemetrics.
 
-### 4. Sumbit your gentx.json
+## 4. Sumbit your gentx.json
 
 Save your gentx file as [github-user-name].json,  ansd submit your json file tohttps://github.com/DipperNetwork/testnet/tree/master/gentx by creating a pull request.

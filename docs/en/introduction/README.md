@@ -1,7 +1,7 @@
 
 ##  Introduction
 
-DipperNetwork-Chain is a blockchain application network based on privacy protection and data security.
+Dipper-Protocol is a blockchain application network based on privacy protection and data security.
 
 ###  Quick start
 
@@ -15,5 +15,3 @@ DipperNetwork-Chain is a blockchain application network based on privacy protect
 * [API reference](../advanced/api.md)
 * [Multisig account](../advanced/multisig.md)
 * [Smart Contract](../advanced/contract.md)
-
-

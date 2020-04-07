@@ -1,6 +1,6 @@
 # DipperNetwork简介
 
-DipperNetwork致力于让实现普惠金融，形成流畅的价值流动网络，DipperNetwork将为所有人提供开放的基础设施和公开的区块链账本。
+DipperNetwork致力于打造高性能去中心化的金融网络，让金融惠及每一个人，从而建立构建安全高效的价值网络，DipperNetwork将为所有人提供开放的基础设施和公开的区块链账本。
 
 ## 快速开始
 

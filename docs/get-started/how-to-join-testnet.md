@@ -44,7 +44,7 @@ dipd unsafe-reset-all
 
 ```bash
 # 拷贝主节点genesis文件,此处从github下载
-wget http://dip.oss-cn-hangzhou.aliyuncs.com/pkgs/genesis.json -O  ~/.dipd/config/genesis.json
+wget https://github.com/Dipper-Labs/Dipper-Protocol/blob/master/genesis.json -O  ~/.dipd/config/genesis.json
 ```
 
 上述命令将测试网genesis文件下载到默认home下的config目录，如果有设定的home，则需要下载到```<your_custom_path>/.dipd/config/genesis.json```,  后面用到home目录的地方均相同。
@@ -54,10 +54,10 @@ wget http://dip.oss-cn-hangzhou.aliyuncs.com/pkgs/genesis.json -O  ~/.dipd/confi
 ```bash
 修改配置文件：~/.dipd/config/config.toml， 在[p2p]配置部分，修改seeds和persistent_peers配置项，添加种子节点seed， 如下：
 # Comma separated list of seed nodes to connect to
-seeds = "e60b962168d85c5b594cb8238e8f8f536c2d2ae2@13.58.188.155:26656,5bd7dc0cb3872e9e7371e7609342875d547e0195@13.124.101.63:26656,d172e23ea6bd1ecb77f058796689110c8387fe5a@18.191.12.61:26656"
+seeds = "1bff9bb3c0adec73c13ee54041f69cf3baf7aaf0@47.110.67.210:26656"
 
 # Comma separated list of nodes to keep persistent connections to
-persistent_peers = "e60b962168d85c5b594cb8238e8f8f536c2d2ae2@13.58.188.155:26656,5bd7dc0cb3872e9e7371e7609342875d547e0195@13.124.101.63:26656,d172e23ea6bd1ecb77f058796689110c8387fe5a@18.191.12.61:26656"
+persistent_peers = "1bff9bb3c0adec73c13ee54041f69cf3baf7aaf0@47.110.67.210:26656"
 ```
 
 ## 3. 启动节点，同步区块
@@ -115,33 +115,34 @@ curl http://127.0.0.1:26657/status
         "block": "10",
         "app": "0"
       },
-      "id": "204d94d5a6dbf73a89101a0d084c2fb56462963a", //节点id
+      "id": "1bff9bb3c0adec73c13ee54041f69cf3baf7aaf0", //节点id
       "listen_addr": "tcp://0.0.0.0:26656", // 节点p2p连接监听地址
       "network": "dip-testnet", //chain-id
-      "version": "0.32.2",
+      "version": "0.32.9",
       "channels": "4020212223303800",
-      "moniker": "lucy", // 节点名称
+      "moniker": "dip-official", // 节点名称
       "other": {
         "tx_index": "on",
         "rpc_address": "tcp://127.0.0.1:26657"
       }
     },
-    "sync_info": {  //当前节点信息
-      "latest_block_hash": "A4E5D60DE7CFB6598846A4131302C8FD28F2697DF2291B33B0892A9EACB562D8", // 最新的区块 hash
-      "latest_app_hash": "32F0B29280EDF3BEAE98424D9AA256EDBEFC973D1C33431A8D74FCA3BC3B6582",
-      "latest_block_height": "1489",     // 当前节点同步到的最新区块高度                                                      //最新区块高度
-      "latest_block_time": "2019-09-10T05:33:13.428333584Z",                                  //最新区块时间 
+    "sync_info": { //当前节点信息
+      "latest_block_hash": "AF0EC818F18B263391266B452FE6C568CCFC3DF2FB918F1D5094A106D463AE06",
+      "latest_app_hash": "527ECDCDC6B0C64A292190C40EDF703C337D13358673E743CF2F9ACC86133AEC",
+      "latest_block_height": "7",// 当前节点同步到的最新区块高度 
+      "latest_block_time": "2020-04-07T09:04:41.491430278Z",//最新区块时间
       "catching_up": false
     },
-    "validator_info": { // 验证人信息
-      "address": "92E0F0A50779E67A2AC25AAF6BCD1E5CF0841DFE",
+    "validator_info": {// 验证人信息
+      "address": "781968683509187C056CFB7EBD2375C53102970E",
       "pub_key": {
         "type": "tendermint/PubKeyEd25519",
-        "value": "cGvHGxHXzOk/L5yVtxeyS9U1mGBNFszvAdYlQoQVGCw="
+        "value": "q/himf30ufy1IObAytG9cK8xQ/ENXu9FhyP7mlSeWgM="
       },
-      "voting_power": "0"
+      "voting_power": "1"
     }
   }
+}
 ```
 
 **检查是否同步完成**
@@ -156,5 +157,5 @@ curl http://127.0.0.1:26657/status
 
 * 部署节点监控工具，点击[这里](../software/monitor.md)
 * 查看常见问题，点击[这里](../advanced/Q&A.md)
-* 测试区块浏览器地址： <https://explorer.DipperNetwork.org>
+* 测试区块浏览器地址： <https://explorer.dippernetwork.com/>
 * 申请测试token，点击[这里](testcoin.md)

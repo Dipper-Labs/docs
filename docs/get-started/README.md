@@ -1,6 +1,6 @@
-## 快速开始
+# 快速开始
 
-### 区块链操作
+## 区块链操作
 
 * [如何安装dip节点程序](../software/how-to-install.md)
 * [如何加入测试网](../get-started/how-to-join-testnet.md)
