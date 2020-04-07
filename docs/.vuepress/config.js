@@ -21,7 +21,7 @@ module.exports = {
     ],
     serviceWorker: true,
     themeConfig: {
-        repo: 'DipperNetwork/docs',
+        repo: 'Dipper-Labs/docs',
         sidebarDepth: 5,
         editLinks: true,
         docsDir: 'docs',
@@ -59,7 +59,6 @@ module.exports = {
                     '/en/get-started/': genSidebarConfig ('get-started', 'Getting Started'),
                     '/en/software/': genSidebarConfig ('software', 'Software'),
                     '/en/applications/': genSidebarConfig ('applications', 'Applications'),
-                    '/en/im/': genSidebarConfig ('im', 'IM Server Deploy'),
                     '/en/advanced/': genSidebarConfig('advanced', 'Advanced')
                 }
             },
