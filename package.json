@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "start": "vuepress dev docs",
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "archiver": "^3.0.0",
+    "ora": "^3.0.0",
+    "shelljs": "^0.8.2"
+  },
+  "dependencies": {
+    "vuepress": "^1.2.0",
+    "web3": "^1.2.4"
+  }
+}
