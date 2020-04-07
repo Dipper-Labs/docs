@@ -71,4 +71,4 @@ You could also change thesemetrics.
 
 ## 4. Sumbit your gentx.json
 
-Save your gentx file as [github-user-name].json,  ansd submit your json file tohttps://github.com/DipperNetwork/testnet/tree/master/gentx by creating a pull request.
+Save your gentx file as [github-user-name].json,  ansd submit your json file tohttps://github.com/Dipper-Labs/Dipper-Protocol/testnet/tree/master/gentx by creating a pull request.

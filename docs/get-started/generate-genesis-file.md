@@ -85,4 +85,4 @@ min_self_delegation: 1pdip
 
 ## 4. 提交gentx文件
 
-将步骤3产生的json文件保存为 [github-user-name].json,  通过提交pull request将json文件提交到https://github.com/DipperNetwork/testnet/tree/master/gentx 目录下。
+将步骤3产生的json文件保存为 [github-user-name].json,  通过提交pull request将json文件提交到https://github.com/Dipper-Labs/Dipper-Protocol/testnet/tree/master/gentx 目录下。

@@ -433,7 +433,7 @@ response:
 
 #### 调用合约
 
-调用合约的payload要根据调用方法的abi来构造，可参考代码 https://github.com/DipperNetwork/Dipper-Protocol/blob/develop/modules/vm/client/cli/query.go 的GetCmdQueryCallFee函数
+调用合约的payload要根据调用方法的abi来构造，可参考代码 https://github.com/Dipper-Labs/Dipper-Protocol/blob/develop/modules/vm/client/cli/query.go 的GetCmdQueryCallFee函数
 
 request:
 
