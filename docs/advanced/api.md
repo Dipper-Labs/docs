@@ -72,7 +72,7 @@ response:
 request:
 
 ```bash
-curl http://rpc.DipperNetwork.org/blocks/latest
+curl http://rpc.dippernetwork.com/blocks/latest
 ```
 
 response:
@@ -190,7 +190,7 @@ response:
 request:
 
 ```bash
-curl http://rpc.DipperNetwork.org/blocks/{height}
+curl http://rpc.dippernetwork.com/blocks/{height}
 ```
 
 response 同上

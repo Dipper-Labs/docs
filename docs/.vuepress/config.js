@@ -96,7 +96,6 @@ module.exports = {
                     '/get-started/': genSidebarConfig ('get-started', '快速开始'),
                     '/software/': genSidebarConfig ('software', '软件'),
                     '/applications/': genSidebarConfig ('applications', '应用'),
-                    '/im/': genSidebarConfig ('im', '即时通讯服务器部署'),
                     '/advanced/': genSidebarConfig('advanced', '高级教程')
                 }
             }
@@ -149,21 +148,6 @@ function genSidebarConfig (module, title) {
                     'transaction',
                     'fee-payment',
                     'contract',
-                    'Q&A'
-                ]
-            }
-        ];
-    }
-
-    if (module === 'im') {
-        return [
-            {
-                title,
-                collapsable: false,
-                children: [
-                    "im-prerequisite",
-                    "quick-start",
-                    "deploy-from-source",
                     'Q&A'
                 ]
             }

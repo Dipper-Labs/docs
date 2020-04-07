@@ -74,7 +74,7 @@ dipcli tx staking create-validator \
   --from=DipperNetwork \
   --ip=xx.xx.xx.xx \
   --node-id=$(dipd tendermint show-node-id) \
-  --website="http://www.DipperNetwork.org" \
+  --website="http://www.dippernetwork.com" \
   --details="validator details xxx" \
   --gas=200000
 ```

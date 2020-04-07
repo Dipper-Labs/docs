@@ -35,7 +35,7 @@ dipcli keys add <key_name> --recover
 
 ## Claim test token
 
-Faucet address: ```https://docs.DipperNetwork.org/dip/get_token?<address>```  
+Faucet address: ```https://docs.dippernetwork.com/dip/get_token?<address>```  
 
 Replace `` `<address>` '' with your wallet address to get the test token
 

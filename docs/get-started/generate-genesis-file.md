@@ -12,7 +12,7 @@
 * 开放端口： 26656和26657
 
 
-安装和配置go，请点击[这里](https://docs.DipperNetwork.org/software/go-install.html)
+安装和配置go，请点击[这里](https://docs.dippernetwork.com/software/go-install.html)
 
 
 安装依赖

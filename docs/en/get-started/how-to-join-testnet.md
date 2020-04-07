@@ -81,5 +81,5 @@ Now, you can try to deploy a Validator on DipperNetwork chain. [Click here](./ho
 
 ## More resources
 
-* Blockchain browser address of the testnet : <https://explorer.DipperNetwork.org>
+* Blockchain browser address of the testnet : <https://explorer.dippernetwork.com>
 * Apply for a token for test token, click [here](./testcoin.md)
