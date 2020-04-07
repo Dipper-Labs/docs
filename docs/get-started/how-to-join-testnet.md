@@ -44,7 +44,7 @@ dipd unsafe-reset-all
 
 ```bash
 # 拷贝主节点genesis文件,此处从github下载
-wget https://github.com/Dipper-Labs/Dipper-Protocol/blob/master/genesis.json -O  ~/.dipd/config/genesis.json
+wget https://raw.githubusercontent.com/Dipper-Labs/Dipper-Protocol/master/genesis.json -O  ~/.dipd/config/genesis.json
 ```
 
 上述命令将测试网genesis文件下载到默认home下的config目录，如果有设定的home，则需要下载到```<your_custom_path>/.dipd/config/genesis.json```,  后面用到home目录的地方均相同。
