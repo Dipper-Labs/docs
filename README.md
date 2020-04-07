@@ -5,7 +5,7 @@ Dipper Protocol document
 
 ```bash
 npm install vuepress -g
-git clone https://github.com/Dipper-Labs/Dipper-Protocol.git
+git clone https://github.com/Dipper-Labs/docs.git
 cd docs
 npm start
 ```
