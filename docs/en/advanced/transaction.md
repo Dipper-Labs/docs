@@ -15,7 +15,6 @@ A transaction on the DipperNetwork chain mainly includes type, msg, fee, signatu
 For transaction fees, please refer to [here](./Q&A.md#Transaction-fees).
 
 
-Comparing the two transactions of transfer and IPAL, the transaction structure is as follows:
 Structure of the transfer transaction:
 ```json
 {
@@ -47,51 +46,6 @@ Structure of the transfer transaction:
 			"signature": "fVKrW3Zo+YRSo4NjmpEXxBRGIgZErlFN5ZyTbRBfcwQPtu5t/NKqZaCcpkaDPS/V0SREmXU+Ce5i6bSYRR9ssA=="
 		}],
 		"memo": "" // memo attached to the transaction
-	}
-}
-```
-
-Structure of the IPAL transaction:
-```json
-{
-	"type": "dip / StdTx", // transaction type, will be dip / StdTx
-	"value": {
-		"msg": [{// msg structure of IPAL
-			"type": "dip/IPALClaim", //msg type of IPAL		
-			"value": {// msg value of IPAL
-				"operator_address": "dip13dwwe6pv92ve9uy8k2u7006a9fd9jwc6gzqx0e", // address
-				"moniker": "moniker", 
-				"website": "http://www.webiste.com",
-				"details": "details", // Introduction of your node
-				"endpoints": [{// starfish node address
-					"type": "1",
-					"endpoint": "192.168.1.100:10000"
-				}, {
-					"type": "2",
-					"endpoint": "192.168.1.101:20000"
-				}],
-				"bond": {// number of bonded assets
-					"denom": "pdip",
-					"amount": "100000"
-				}
-			}
-		}],
-		"fee": {// transaction fee
-			"amount": [{
-				"denom": "pdip",
-				"amount": "1000000000"
-			}],
-			"gas": "100000" // maximum gas amount specified by the transaction
-		},
-		"signatures": [{// transaction signature
-			"pub_key": {
-				"type": "tendermint/PubKeySecp256k1",
-				"value": "AjJLEV6oaYKEzpplQfoxeSo1YbVftXH6jTEqUTNv3gaj"
-			},
-			"signature": "fVKrW3Zo+YRSo4NjmpEXxBRGIgZErlFN5ZyTbRBfcwQPtu5t/NKqZaCcpkaDPS/V0SREmXU+Ce5i6bSYRR9ssA=="
-		}],
-		"memo": "" // memo attached to the transaction
-
 	}
 }
 ```

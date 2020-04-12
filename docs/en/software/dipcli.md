@@ -24,11 +24,6 @@ dipcli query tx [hash]
 dipcli query staking validators
 ```
 
-### Query IPAL Lists
-```bash
-dipcli query ipal list
-```
-
 ## Transactions
 
 ### Transfer
