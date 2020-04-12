@@ -9,17 +9,17 @@ Please follow the [tutorial](../software/how-to-install.md) to install dip
 # usage: 
 # dipd init <your_custom_name> --chain-id dip-testnet
 # example:
-dipd init lucy --chain-id dip-testnet
+dipd init jackson --chain-id dip-testnet
 
 # Download genesis file  from github
-wget https://raw.githubusercontent.com/DipperNetwork/docs/master/testnet/genesis.json -O  ~/.dipd/config/genesis.json
+wget https://raw.githubusercontent.com/Dipper-Labs/Dipper-Protocol/master/genesis.json -O  ~/.dipd/config/genesis.json
 
 # Modify the configuration file:~/.dipd/config/config.toml， add seed-nodes as follows:
 # Comma separated list of seed nodes to connect to
-seeds = "e60b962168d85c5b594cb8238e8f8f536c2d2ae2@13.58.188.155:26656,5bd7dc0cb3872e9e7371e7609342875d547e0195@13.124.101.63:26656,d172e23ea6bd1ecb77f058796689110c8387fe5a@18.191.12.61:26656"
+seeds = "1bff9bb3c0adec73c13ee54041f69cf3baf7aaf0@47.110.67.210:26656"
 
 # Comma separated list of nodes to keep persistent connections to
-persistent_peers = "e60b962168d85c5b594cb8238e8f8f536c2d2ae2@13.58.188.155:26656,5bd7dc0cb3872e9e7371e7609342875d547e0195@13.124.101.63:26656,d172e23ea6bd1ecb77f058796689110c8387fe5a@18.191.12.61:26656"
+persistent_peers = "1bff9bb3c0adec73c13ee54041f69cf3baf7aaf0@47.110.67.210:26656"
 ```
 
 ## 3. Start dipd
@@ -51,7 +51,7 @@ curl http://127.0.0.1:26657/status
       "network": "dip-testnet", //chain-id
       "version": "0.32.2",
       "channels": "4020212223303800",
-      "moniker": "lucy", // Node name
+      "moniker": "jackson", // Node name
       "other": {
         "tx_index": "on",
         "rpc_address": "tcp://127.0.0.1:26657"

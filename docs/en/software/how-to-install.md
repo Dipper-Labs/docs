@@ -2,7 +2,7 @@
 
 ## The latest version
 
-The latest  testnet version is testnet-v1.1.0
+The latest  testnet version is testnet-v2.3.1
 
 ## Server configuration
 
@@ -33,7 +33,7 @@ To install and configure go, click [here](../software/go-install.md)
 ```bash 
 # Get dip source code
 git clone https://github.com/Dipper-Labs/Dipper-Protocol.git
-cd Dipper-Protocol && git checkout  testnet-v1.1.0
+cd Dipper-Protocol && git checkout  testnet-v2.3.1
 
 
 # Install statik

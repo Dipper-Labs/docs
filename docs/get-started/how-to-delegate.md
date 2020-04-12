@@ -9,13 +9,13 @@
 如果你已经拥有钱包，可跳过此步骤
 
 ```bash
-dipcli keys add lucy
+dipcli keys add jackson
 
-override the existing name lucy [y/N]: y
+override the existing name jackson [y/N]: y
 Enter a passphrase to encrypt your key to disk:
 Repeat the passphrase:
 {
-  "name": "lucy",
+  "name": "jackson",
   "type": "local",
   "address": "dip1l3c8k72wwt5fps9fs7h4tfdz9352m6dlsspdh5",
   "pubkey": "dippub1addwnpepqt48jfuqrqy9n7d7vr6wvudq4nxrmupem8lw6t23k255j3mexgu0q3l6wuq",
@@ -47,7 +47,7 @@ response:
     "tokens": "1000000",
     "delegator_shares": "1000000.000000000000000000",
     "description": {
-      "moniker": "lucy",
+      "moniker": "jackson",
       "identity": "",
       "website": "",
       "details": ""

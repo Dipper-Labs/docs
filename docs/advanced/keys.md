@@ -11,7 +11,7 @@ dipcli keys add <key_name>
 根据提示，输入钱包密码，得到示例如下输出：
 
 ```bash
-- name: lucy
+- name: jackson
   type: local
   address: dip1p3fuppcxud5rjsaywuyuguh6achmj5p0r6z6ve  // 地址
   pubkey: dippub1addwnpepqg8mfc6t9eaw9lal0c4tzma5vgmqzkgszwcgljcz3sy8rd2rukgxz9dtmph  // 公钥

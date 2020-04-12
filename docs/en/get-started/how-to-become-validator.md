@@ -66,7 +66,7 @@ dipcli tx staking create-validator \
 ```bash
 dipcli query staking validators
 
-# You can find the newly added validator lucy in the list
+# You can find the newly added validator jackson in the list
 
 [
   {
@@ -77,7 +77,7 @@ dipcli query staking validators
     "tokens": "10000",
     "delegator_shares": "10000.000000000000000000",
     "description": {
-      "moniker": "lucy",
+      "moniker": "jackson",
       "identity": "",
       "website": "",
       "details": ""
@@ -107,7 +107,7 @@ Step5 creates a validator, and its status is 0 at this time, 0 means that it has
 
 Therefore, at least 990000pdip needs to be mortgaged. You can use your own account to collateral yourself, or you can let other accounts collateral to your verifier. Here are shown separately:
 
-Here you need to use the validator address corresponding to the lucy account in step 4. operator_address: dipvaloper18q4pv9qvmqx7dcd2jq3dl3d0755urk8300709e
+Here you need to use the validator address corresponding to the jackson account in step 4. operator_address: dipvaloper18q4pv9qvmqx7dcd2jq3dl3d0755urk8300709e
 
 ### Delegate 990000pdip
 
@@ -132,7 +132,7 @@ dipcli query staking validators
     "tokens": "1000000",
     "delegator_shares": "1000000.000000000000000000",
     "description": {
-      "moniker": "lucy",
+      "moniker": "jackson",
       "identity": "",
       "website": "",
       "details": ""
@@ -178,7 +178,7 @@ dipcli query staking validators
   }
 ]
 
-# You can see that the status of the newly added validator lucy becomes 2, an active validator, you can check the block status through the block browser
+# You can see that the status of the newly added validator jackson becomes 2, an active validator, you can check the block status through the block browser
 ```
 ## 9. How to unbond DIP
 To withdraw bonded staking you delegated for a validator by executing the following command ```unband```.

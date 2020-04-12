@@ -100,7 +100,7 @@ dipcli tx staking create-validator \
 ```bash
 dipcli query staking validators
 
-可以发现列表中新增加的验证人lucy
+可以发现列表中新增加的验证人jackson
 
 [
   {
@@ -111,7 +111,7 @@ dipcli query staking validators
     "tokens": "10000",
     "delegator_shares": "10000000000.000000000000000000",
     "description": {
-      "moniker": "lucy",
+      "moniker": "jackson",
       "identity": "",
       "website": "",
       "details": ""
@@ -141,7 +141,7 @@ step5创建了验证人，此时其状态为0，0表示还没有绑定，因为�
 可以用自己的账号给自己抵押，也可以让别的账号给自己的验证者抵押
 如何用别的账号为自己抵押，[点击这里](../software/dipcli.md)
 
-这里需要用到步骤4中lucy账号对应的验证人地址operator_address: dipvaloper18q4pv9qvmqx7dcd2jq3dl3d0755urk8300709e
+这里需要用到步骤4中jackson账号对应的验证人地址operator_address: dipvaloper18q4pv9qvmqx7dcd2jq3dl3d0755urk8300709e
 
 ### 7.1 如何查看operator_address
 
@@ -186,7 +186,7 @@ dipcli query staking validators
     "tokens": "1000000",
     "delegator_shares": "1000000000000.000000000000000000",
     "description": {
-      "moniker": "lucy",
+      "moniker": "jackson",
       "identity": "",
       "website": "",
       "details": ""
@@ -232,7 +232,7 @@ dipcli query staking validators
   }
 ]
 
-# 可以看到新增加验证人lucy的status变成2，成为活跃验证人，可通过区块浏览器查看出块情况
+# 可以看到新增加验证人jackson的status变成2，成为活跃验证人，可通过区块浏览器查看出块情况
 ```
 ## 9. 如何解绑
 委托给验证的人token, 可以通过```unbond``` 命令可以取回

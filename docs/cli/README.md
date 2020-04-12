@@ -40,7 +40,7 @@ ERROR: {"codespace":"sdk","code":9,"message":"account dip19gs3mav6jtln6clwfneg29
 dipcli send --from dip13lmppkumkmf6699q4gpukg8fz5pf2lgzm8mfsm --to dip19gs3mav6jtln6clwfneg296shz09xtcun2pjw7 --amount 10pdip
 
 或者
-dipcli send --from $(dipcli keys show alice -a) --to $(dipcli keys show lucy -a) --amount 10pdip
+dipcli send --from $(dipcli keys show alice -a) --to $(dipcli keys show jackson -a) --amount 10pdip
 ```
 
 ## * 查询转账后余额
@@ -72,7 +72,7 @@ dipcli query account $(dipcli keys show alice -a)
 
 dipcli query account dip19gs3mav6jtln6clwfneg296shz09xtcun2pjw7
 或者
-dipcli query account $(dipcli keys show lucy -a)
+dipcli query account $(dipcli keys show jackson -a)
 
 {
   "type": "dip/Account",

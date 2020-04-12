@@ -13,7 +13,7 @@ dipcli keys add <key_name>
 Enter the wallet password as prompted, and get the following example output:
 
 ```bash
-- name: lucy
+- name: jackson
   type: local
   address: dip1p3fuppcxud5rjsaywuyuguh6achmj5p0r6z6ve
   pubkey: dippub1addwnpepqg8mfc6t9eaw9lal0c4tzma5vgmqzkgszwcgljcz3sy8rd2rukgxz9dtmph
