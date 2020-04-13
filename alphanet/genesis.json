@@ -55,19 +55,7 @@
         "address": "dip1ltj8k7pmkurukj8pf5maf4g47g8zq9gl06xff5",
         "coins": [
           {
-            "denom": "dai",
-            "amount": "10000000000000000"
-          },
-          {
-            "denom": "eth",
-            "amount": "10000000000000000"
-          },
-          {
             "denom": "pdip",
-            "amount": "10000000000000000"
-          },
-          {
-            "denom": "stake",
             "amount": "10000000000000000"
           }
         ],
@@ -87,19 +75,7 @@
         "address": "dip1p9g2nx6t2qecg3k5zztmmcnvvfzxxuew0lyzgs",
         "coins": [
           {
-            "denom": "dai",
-            "amount": "10000000000000000"
-          },
-          {
-            "denom": "eth",
-            "amount": "10000000000000000"
-          },
-          {
             "denom": "pdip",
-            "amount": "10000000000000000"
-          },
-          {
-            "denom": "stake",
             "amount": "10000000000000000"
           }
         ],
