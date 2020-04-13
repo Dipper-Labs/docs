@@ -7,5 +7,5 @@
 * [智能合约教程](contract.md)
 * [交易结构](transaction.md)
 * [交易费用代付](fee-payment.md)
-* [NIPs](dips.md)
+* [DIPs](dips.md)
 * [常见问题](Q&A.md)
