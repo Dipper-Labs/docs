@@ -222,9 +222,9 @@ abi:
 ### 部署智能合约
 
 ```bash
-dipcli vm create --code_file=./demo/demo.bc \
---from $(dipcli keys show -a alice) --amount=0pdip \
---gas=1000000
+dipcli vm create --code_file=./demo/demo.bc --abi_file=./demo/demo.abi \
+--from $(dipcli keys show -a alice) --amount=0pdip --args='' \
+--gas=4000000
 ```
 
 其中：
@@ -303,7 +303,7 @@ dipcli query vm code dip1vp0pzeyst7zjkck5qk0kvplu3szsdxp04kg5xc
 dipcli vm call --from $(dipcli keys show -a alice) \
 --contract_addr dip1vp0pzeyst7zjkck5qk0kvplu3szsdxp04kg5xc \
 --method transfer  \
---args  "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002" \
+--args  'dip1a3qa7dlfhsuzpjwrxhygmscr96uxuar9n0jkdd 2' \
 --amount 1000000pdip \
 --abi_file ./demo/demo.abi
 ```
@@ -317,11 +317,7 @@ dipcli vm call --from $(dipcli keys show -a alice) \
 function transfer(address to, uint256 value) public returns (bool success)
 ```
 
-```transfer``` 方法需要2个参数，分别为接收方地址和转账数量。示例中接收地址为全0， 转帐数量为2， 分别将这2个参数转成16进制，并补齐为32个字节。如下：
-
-```javascript
-00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002
-```
+```transfer``` 方法需要2个参数，分别为接收方地址和转账数量。示例中接收地址为dip1a3qa7dlfhsuzpjwrxhygmscr96uxuar9n0jkdd， 转帐数量为2.
 
  查询合约账户余额：
 
