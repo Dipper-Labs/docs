@@ -54,10 +54,10 @@ wget https://raw.githubusercontent.com/Dipper-Labs/Dipper-Protocol/master/genesi
 ```bash
 修改配置文件：~/.dipd/config/config.toml， 在[p2p]配置部分，修改seeds和persistent_peers配置项，添加种子节点seed， 如下：
 # Comma separated list of seed nodes to connect to
-seeds = "1bff9bb3c0adec73c13ee54041f69cf3baf7aaf0@47.110.67.210:26656"
+seeds = "2ffc7486b5c8a512ee785092c1651ac81f600905@47.110.67.210:26656"
 
 # Comma separated list of nodes to keep persistent connections to
-persistent_peers = "1bff9bb3c0adec73c13ee54041f69cf3baf7aaf0@47.110.67.210:26656"
+persistent_peers = "2ffc7486b5c8a512ee785092c1651ac81f600905@47.110.67.210:26656"
 ```
 
 ## 3. 启动节点，同步区块

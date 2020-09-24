@@ -78,6 +78,6 @@ sudo service grafana-server start
 
 * 添加仪表盘
 
-点击左上侧的"+"按键并选择"import“，打开import页面，将[此处](https://github.com/iavl/monitor/blob/master/dip_dashboard.json)的json文件粘贴到对话框，并点击"Load"，完成仪表盘添加。
+点击左上侧的"+"按键并选择"import“，打开import页面，将[此处](https://github.com/Dipper-Labs/monitor/blob/master/dip_dashboard.json)的json文件粘贴到对话框，并点击"Load"，完成仪表盘添加。
 
 ![](../images/monitor-2.jpg)

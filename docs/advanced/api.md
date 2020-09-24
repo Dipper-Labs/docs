@@ -72,7 +72,7 @@ response:
 request:
 
 ```bash
-curl http://rpc.dippernetwork.com/blocks/latest
+curl http://127.0.0.1:1317/blocks/latest
 ```
 
 response:
@@ -190,7 +190,7 @@ response:
 request:
 
 ```bash
-curl http://rpc.dippernetwork.com/blocks/{height}
+curl http://127.0.0.1:1317/blocks/{height}
 ```
 
 response 同上
@@ -395,8 +395,8 @@ response:
 可通过```dipcli```构造payload，，如下构造一个创建合约的交易消息，不做签名
 
 ```bash
-dipcli vm create --code_file=./demo/demo.bc \
---from $(dipcli keys show -a alice) --amount=0pdip \
+dipcli vm create --code_file=./demo/demo.bc --abi_file=./demo/demo.abi \
+--from $(dipcli keys show -a alice) --amount=0pdip --args '' \
 --gas=1000000 --generate-only
 ```
 

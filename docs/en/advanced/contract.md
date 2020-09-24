@@ -6,7 +6,7 @@ Configure development environment and dependencies, refer to [here](../software/
 ```bash
 git clone https://github.com/Dipper-Labs/Dipper-Protocol.git
 
-cd Dipper-Protocol && git checkout testnet
+cd Dipper-Protocol && git checkout testnet-v4.0.0
 
 make install
 ```
@@ -218,9 +218,9 @@ abi:
 ### Deploying smart contracts
 
 ```bash
-dipcli vm create --code_file=./demo/demo.bc \
---from $(dipcli keys show -a alice) --amount=0pdip \
---gas=1000000
+dipcli vm create --code_file=./demo/demo.bc --abi_file=./demo/demo.abi \
+--from $(dipcli keys show -a alice) --args '' --amount=0pdip \
+--gas=1000000 -y
 ```
 
 Parameters explanations:
@@ -236,16 +236,10 @@ After the transaction is broadcast, the terminal responds as follows:
 ```json
 {
   "height": "0",
-  "txhash": "C991A111B943E8C1D6BCA1F35A93BFC7F268C963F0B286340AF647D228FBCB01",
-  "raw_log": "[{\"msg_index\":0,\"success\":true,\"log\":\"\"}]",
-  "logs": [
-    {
-      "msg_index": 0,
-      "success": true,
-      "log": ""
-    }
-  ]
+  "txhash": "C8C862AA683219914F1816FF40D8A34D57FF24C5910D79B52820AED798BC6795",
+  "raw_log": "[]"
 }
+
 ```
 
 The ```txhash``` is the transaction hash. You can query whether the transaction was successful and the newly created contract address according to the ```txhash``` returned.
@@ -259,13 +253,13 @@ If the returned result contains```"success":true```, the transaction was success
 In the transaction details, the events structure contains the newly created contract address:
 
 ```json
- "events": [
+  "events": [
     {
       "type": "message",
       "attributes": [
         {
           "key": "action",
-          "value": "contract"
+          "value": "contract_create"
         },
         {
           "key": "module",
@@ -278,19 +272,19 @@ In the transaction details, the events structure contains the newly created cont
       "attributes": [
         {
           "key": "address",
-          "value": "dip1vp0pzeyst7zjkck5qk0kvplu3szsdxp04kg5xc"
+          "value": "dip1gcwk24al08lul80aejyq409mjgtqfu9uhgwtw4"
         }
       ]
     }
   ],
 ```
 
-As it mentioned above,```dip1vp0pzeyst7zjkck5qk0kvplu3szsdxp04kg5xc``` is the newly deployed contract address.
+As it mentioned above,```dip1gcwk24al08lul80aejyq409mjgtqfu9uhgwtw4``` is the newly deployed contract address.
 
 According to the above-mentioned contract address, the contract code on the blockchain can be queried.
 
 ```bash
-dipcli query vm code dip1vp0pzeyst7zjkck5qk0kvplu3szsdxp04kg5xc
+dipcli query vm code dip1gcwk24al08lul80aejyq409mjgtqfu9uhgwtw4
 ```
 
 ## How to call smart contract
@@ -299,11 +293,11 @@ To call a smart contract, you need to use an abi file. It is assumed that the ab
 
 ```bash
 dipcli vm call --from $(dipcli keys show -a alice) \
---contract_addr dip1vp0pzeyst7zjkck5qk0kvplu3szsdxp04kg5xc \
+--contract_addr dip1gcwk24al08lul80aejyq409mjgtqfu9uhgwtw4 \
 --method transfer  \
---args  "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002" \
+--args  "dip1vp0pzeyst7zjkck5qk0kvplu3szsdxp04kg5xc 2" \
 --amount 1000000pdip \
---abi_file ./demo/demo.abi
+--abi_file ./demo/demo.abi -y
 ```
 
 Parameters Explanations:
@@ -325,10 +319,7 @@ The above example calls the contract's ```transfer``` method, which is declared 
 function transfer(address to, uint256 value) public returns (bool success)
 ```
 
-The ```transfer``` method requires 2 parameters, which are the receiver's address and the number of assets to transfer. In the example, the receiving address is composed of 0 and the number of transfers is 2. The two parameters are converted into hexadecimal and they are filled to 32 bytes. as follows:
-```javascript
-00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002
-```
+The ```transfer``` method requires 2 parameters, which are the receiver's address and the number of assets to transfer. In the example, the receiving address is dip1vp0pzeyst7zjkck5qk0kvplu3szsdxp04kg5xc and the number of transfers is 2
 
  
 Check the contract account balance:
@@ -343,20 +334,14 @@ Querying contract status requires the use of abi files. It is assumed that the a
 In the contract example, ```balanceOf``` is a read-only method. You can query the status of the specified address in the contract according to this method.
 ```bash
 # Call the contract's balanceOf method,
-dipcli query vm call $(dipcli keys show -a alice) dip1vp0pzeyst7zjkck5qk0kvplu3szsdxp04kg5xc balanceOf "0000000000000000000000000000000000000000000000000000000000000000" 0pdip ./demo/demo.abi
+dipcli query vm call $(dipcli keys show -a alice) dip1gcwk24al08lul80aejyq409mjgtqfu9uhgwtw4 balanceOf ./demo/demo.abi --args "dip16g54d2akrlln48j5p7gcv4nucfzdn2zsxe54j4" --amount 0pdip 
 ```
 
 Query the status of the alice account in the contract:
 
 ```bash
-# Use dipcli to first convert the address of alice to hexadecimal
-dipcli keys parse $(dipcli keys show -a alice)
-
-# Fill up to 32 bytes, for example:
- 0000000000000000000000008a68bdace7153f631c35a5d9eec55e9e1eb0c85f
-
 # Use dipcli to query the status
-dipcli query vm call $(dipcli keys show -a alice) dip1vp0pzeyst7zjkck5qk0kvplu3szsdxp04kg5xc balanceOf "0000000000000000000000008a68bdace7153f631c35a5d9eec55e9e1eb0c85f" 0pdip ./demo/demo.abi
+dipcli query vm call $(dipcli keys show -a alice) dip1gcwk24al08lul80aejyq409mjgtqfu9uhgwtw4 balanceOf ./demo/demo.abi --args "dip16g54d2akrlln48j5p7gcv4nucfzdn2zsxe54j4" --amount 0pdip 
 ```
 
 You can call the contract by the ```query``` method on ```dipcli```, and only the status can be queried, It will not create Tx on chain. You can also use this method of dipcli to construct the payload field for contract-related REST APIs.

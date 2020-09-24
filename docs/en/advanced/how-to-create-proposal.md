@@ -15,11 +15,14 @@ Take modifying the maximum number of validators as an example, first check the c
 dipcli query staking params
 
 {
-  "unbonding_time": "604800000000000",
-  "max_validators": 100,
-  "max_entries": 7,
+  "next_extending_time": "2021-09-22T08:57:32.497032Z",
   "bond_denom": "pdip",
-  "max_lever": "20.000000000000000000"
+  "unbonding_time": "1209600000000000",
+  "max_lever": "20.000000000000000000",
+  "max_validators": 100,
+  "max_validators_extending_limit": 300,
+  "max_validators_extending_speed": 10,
+  "max_entries": 7
 }
 ```
 

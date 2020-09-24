@@ -8,28 +8,28 @@
 * Get the latest block
 
 ```bash
-curl http://rpc.dippernetwork.com/blocks/latest
+curl http://127.0.0.1:1317/blocks/latest
 ```
 
 * Get block by height
 
 ```bash
-curl http://rpc.dippernetwork.com/blocks/{height}
+curl http://127.0.0.1:1317/blocks/{height}
 ```
 
 * Broadcast transaction
   
 ```bash
-curl -X POST "http://rpc.dippernetwork.com/txs" -H "accept: application/json" -H "Content-Type: application/json" -d "{transaction msg}"
+curl -X POST "http://127.0.0.1:1317/txs" -H "accept: application/json" -H "Content-Type: application/json" -d "{transaction msg}"
 ```
 
 ### Query transaction by transaction hash
 
 ```bash
-curl http://rpc.dippernetwork.com/txs/{tx_hash}
+curl http://127.0.0.1:1317/txs/{tx_hash}
 
 e.g.
-curl http://rpc.dippernetwork.com/txs/779C97E3882E14FD13407E78C49C2BA343FC5F55BAA2C912B8D8216C1EE269E7
+curl http://127.0.0.1:1317/txs/779C97E3882E14FD13407E78C49C2BA343FC5F55BAA2C912B8D8216C1EE269E7
 
 {
   "height": "9845",

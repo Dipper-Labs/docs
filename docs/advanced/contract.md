@@ -8,7 +8,7 @@
 
 ```bash
 git clone https://github.com/Dipper-Labs/Dipper-Protocol.git
-cd Dipper-Protocol && git checkout testnet
+cd Dipper-Protocol && git checkout testnet-v4.0.0
 
 make install
 ```
@@ -224,28 +224,23 @@ abi:
 ```bash
 dipcli vm create --code_file=./demo/demo.bc --abi_file=./demo/demo.abi \
 --from $(dipcli keys show -a alice) --amount=0pdip --args='' \
---gas=4000000
+--gas=4000000 -y
 ```
 
 其中：
- ```--code_file``` 指定字节码文件路径, 
+ ```--code_file``` 指定字节码文件路径,
+ ```--abi_file``` 指定abi文件路径
  ```--amount``` 表示向合约发送的资产数量， 由于示例合约的构造函数不带payable修饰符，所以只能传0pdip,
  ```--gas``` 指定本次交易的gas上限，dipcli默认为10万; 创建合约消耗的gas比较多，需要指定一个比较大的值
+ ```--args``` 指定创建合约构造函数参数列表，以空格分割多个参数
 
 交易发出后，终端响应如下：
 
 ```json
 {
   "height": "0",
-  "txhash": "C991A111B943E8C1D6BCA1F35A93BFC7F268C963F0B286340AF647D228FBCB01",
-  "raw_log": "[{\"msg_index\":0,\"success\":true,\"log\":\"\"}]",
-  "logs": [
-    {
-      "msg_index": 0,
-      "success": true,
-      "log": ""
-    }
-  ]
+  "txhash": "F53BC778587AA6729B391D7495FE79B09F77C4CACA3A898F95183CD525EA08DA",
+  "raw_log": "[]"
 }
 ```
 
@@ -260,13 +255,13 @@ dipcli query tx <txhash>
 交易详情中，其中的events结构中包含新创建的合约地址：
 
 ```json
- "events": [
+  "events": [
     {
       "type": "message",
       "attributes": [
         {
           "key": "action",
-          "value": "contract"
+          "value": "contract_create"
         },
         {
           "key": "module",
@@ -279,20 +274,20 @@ dipcli query tx <txhash>
       "attributes": [
         {
           "key": "address",
-          "value": "dip1vp0pzeyst7zjkck5qk0kvplu3szsdxp04kg5xc"
+          "value": "dip1a5ev4u3rpvvw8qgjs2635jhqe5tr9cuj8xs40z"
         }
       ]
     }
-  ],
+  ]
 ```
 
-如上，其中 ```dip1vp0pzeyst7zjkck5qk0kvplu3szsdxp04kg5xc``` 即新部署的合约地址。
+如上，其中 ```dip1a5ev4u3rpvvw8qgjs2635jhqe5tr9cuj8xs40z``` 即新部署的合约地址。
 
 
 根据上述新创建的合约地址，可查询区块链上的合约代码
 
 ```bash
-dipcli query vm code dip1vp0pzeyst7zjkck5qk0kvplu3szsdxp04kg5xc
+dipcli query vm code dip1a5ev4u3rpvvw8qgjs2635jhqe5tr9cuj8xs40z
 ```
 
 ## 调用智能合约
@@ -301,9 +296,9 @@ dipcli query vm code dip1vp0pzeyst7zjkck5qk0kvplu3szsdxp04kg5xc
 
 ```bash
 dipcli vm call --from $(dipcli keys show -a alice) \
---contract_addr dip1vp0pzeyst7zjkck5qk0kvplu3szsdxp04kg5xc \
+--contract_addr dip1a5ev4u3rpvvw8qgjs2635jhqe5tr9cuj8xs40z \
 --method transfer  \
---args  'dip1a3qa7dlfhsuzpjwrxhygmscr96uxuar9n0jkdd 2' \
+--args 'dip1a3qa7dlfhsuzpjwrxhygmscr96uxuar9n0jkdd 2' \
 --amount 1000000pdip \
 --abi_file ./demo/demo.abi
 ```
@@ -333,22 +328,17 @@ dipcli query account dip1vp0pzeyst7zjkck5qk0kvplu3szsdxp04kg5xc
 
 ``` bash
 # 调用合约的balanceOf方法，
-dipcli query vm call $(dipcli keys show -a alice) dip1vp0pzeyst7zjkck5qk0kvplu3szsdxp04kg5xc balanceOf "0000000000000000000000000000000000000000000000000000000000000000" 0pdip ./demo/demo.abi
+dipcli query vm call $(dipcli keys show -a alice) dip1a5ev4u3rpvvw8qgjs2635jhqe5tr9cuj8xs40z balanceOf ./demo/demo.abi --amount 0pdip --args 'dip1a3qa7dlfhsuzpjwrxhygmscr96uxuar9n0jkdd'
 ```
 
 查询alice帐户在合约中的状态：
 
 ```bash
-# 使用```dipcli```先将alice的地址转成16进制
-dipcli keys parse $(dipcli keys show -a alice)
-
-# 补齐为32个字节, 例如: 0000000000000000000000008a68bdace7153f631c35a5d9eec55e9e1eb0c85f
-
 # 使用dipcli查询状态
-dipcli query vm call $(dipcli keys show -a alice) dip1vp0pzeyst7zjkck5qk0kvplu3szsdxp04kg5xc balanceOf "0000000000000000000000008a68bdace7153f631c35a5d9eec55e9e1eb0c85f" 0pdip ./demo/demo.abi
+dipcli query vm call $(dipcli keys show -a alice) dip1vp0pzeyst7zjkck5qk0kvplu3szsdxp04kg5xc balanceOf ./demo/demo.abi --amount 0pdip --args "dip1a3qa7dlfhsuzpjwrxhygmscr96uxuar9n0jkdd"
 ```
 
-通过```dipcli```的```query```方式调用合约，只能够查询状态，不会在链上记账。 也可以使用dipcli的这种方式，构造payload字段，用于合约相关的REST API。
+通过```dipcli```的```query```方式调用合约，只能够查询状态，不会在链上记账。
 
 ## 智能合约相关API
 

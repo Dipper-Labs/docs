@@ -18,7 +18,7 @@ To install and configure go, click [here](../software/go-install.md)
 ```bash
 # Get dip source code
 git clone https://github.com/Dipper-Labs/Dipper-Protocol.git
-cd Dipper-Protocol && git checkout testnet-v2.3.1
+cd Dipper-Protocol && git checkout testnet-v4.0.0
 
 # Install statik
 sudo apt-get update
