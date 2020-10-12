@@ -1,5 +1,5 @@
 
-# API 参考
+# REST API
 
 ```dipcli``` 开启rest-server后，浏览器访问 ```http://127.0.0.1:1317/swagger-ui/``` 可以看到所有的REST APIs
 
@@ -28,12 +28,12 @@ response：
       "block": "10",
       "app": "0"
     },
-    "id": "32d9a41f23c27d7e7b51b6ab7f6d30ba53319e31",
+    "id": "fe599889a0bba312173cdc6e61cc160b15b19700",
     "listen_addr": "tcp://0.0.0.0:26656",
-    "network": "dip-chain",
-    "version": "0.32.8",
+    "network": "dip-testnet",
+    "version": "0.32.13",
     "channels": "4020212223303800",
-    "moniker": "local-dip",
+    "moniker": "sun",
     "other": {
       "tx_index": "on",
       "rpc_address": "tcp://127.0.0.1:26657"
@@ -43,10 +43,11 @@ response：
     "name": "dip",
     "server_name": "dipd",
     "client_name": "dipcli",
-    "version": "1.0.11-192-gfa5a542",
-    "commit": "fa5a542a4af5493d45c3934a3c6e8e41cb724c98",
+    "version": "testnet-v4.0.0-8-g1b877b9",
+    "app_version": "0",
+    "commit": "1b877b9df930926e756e3a3f026e9b69bd8db0ce",
     "build_tags": "netgo",
-    "go": "go version go1.13.5 darwin/amd64"
+    "go": "go version go1.14.2 darwin/amd64"
   }
 }
 ```
@@ -81,10 +82,10 @@ response:
 {
   "block_meta": {
     "block_id": {
-      "hash": "D1DCF02C7BEB781E532BF02E5964EB2B13FFF6C334DDD3FC9F0320CF5293DEFB",
+      "hash": "C9F42D9F53205D46D0F6C0C089368DF48194CC0B5C52CBD2628BACBCEB9D07F4",
       "parts": {
         "total": "1",
-        "hash": "E7233052B3DE6B99677FF48EC5B610D4D288ED5F65D2CFC14B96388441DA190D"
+        "hash": "74585761EA406DCAD58410FEA7ED4992595F4C67EFB783596B3C54577AC3FF52"
       }
     },
     "header": {
@@ -92,27 +93,27 @@ response:
         "block": "10",
         "app": "0"
       },
-      "chain_id": "dip-chain",
-      "height": "964",
-      "time": "2020-01-08T06:48:04.491292Z",
+      "chain_id": "dip-testnet",
+      "height": "408710",
+      "time": "2020-10-12T06:39:23.317752452Z",
       "num_txs": "0",
-      "total_txs": "6",
+      "total_txs": "25",
       "last_block_id": {
-        "hash": "787390598CF683E7B1AE1E438AAD286D436F52F06C79AC459C4375E6C14628BE",
+        "hash": "C299E482AE8ADAC6856D69EB4CD0D634592DBC5CBC216F8F7027702F3382F4D1",
         "parts": {
           "total": "1",
-          "hash": "83E6CD2DB4FCE014E38CF1BEAA3746A2A7F9D92A8093BBD9B3FF14BB78A10E32"
+          "hash": "C424BB45293D7962C07BB7CA962127C4BB302C880A3ACBD309CD8EECB25178FD"
         }
       },
-      "last_commit_hash": "6991E025A3AF65D7D444E354EAA6AD6F2454E93D9D029602D659E15928BF11F5",
+      "last_commit_hash": "965FA634A4983037635875D765BBD2A73F3E5025883E88F09F72C9C48DF55BA4",
       "data_hash": "",
-      "validators_hash": "C414E30D196E83F711DCB8161748563A1D968EC51C48F3D20141D20FE3657788",
-      "next_validators_hash": "C414E30D196E83F711DCB8161748563A1D968EC51C48F3D20141D20FE3657788",
+      "validators_hash": "6DEA966562F2F2D001110233E39AF8CDD28F2EE245E0DE4D958C2EE7BBEA718E",
+      "next_validators_hash": "6DEA966562F2F2D001110233E39AF8CDD28F2EE245E0DE4D958C2EE7BBEA718E",
       "consensus_hash": "048091BC7DDC283F77BFBF91D73C44DA58C3DF8A9CBC867405D8B7F3DAADA22F",
-      "app_hash": "1146068A69F9F0FC77B2BDD121A445D25705059F2F8A68D4E4688B5B9D8D0AD9",
+      "app_hash": "29628A861F889E1D55BD6A10F0B6883393215C4028BAC85AC4DD89D82091FE50",
       "last_results_hash": "",
       "evidence_hash": "",
-      "proposer_address": "A8FDB9C6D29B83E04EF9990107799BB598DBF3EE"
+      "proposer_address": "20F1E1742088735C093FDC79B8AABB2007F0B947"
     }
   },
   "block": {
@@ -121,27 +122,27 @@ response:
         "block": "10",
         "app": "0"
       },
-      "chain_id": "dip-chain",
-      "height": "964",
-      "time": "2020-01-08T06:48:04.491292Z",
+      "chain_id": "dip-testnet",
+      "height": "408710",
+      "time": "2020-10-12T06:39:23.317752452Z",
       "num_txs": "0",
-      "total_txs": "6",
+      "total_txs": "25",
       "last_block_id": {
-        "hash": "787390598CF683E7B1AE1E438AAD286D436F52F06C79AC459C4375E6C14628BE",
+        "hash": "C299E482AE8ADAC6856D69EB4CD0D634592DBC5CBC216F8F7027702F3382F4D1",
         "parts": {
           "total": "1",
-          "hash": "83E6CD2DB4FCE014E38CF1BEAA3746A2A7F9D92A8093BBD9B3FF14BB78A10E32"
+          "hash": "C424BB45293D7962C07BB7CA962127C4BB302C880A3ACBD309CD8EECB25178FD"
         }
       },
-      "last_commit_hash": "6991E025A3AF65D7D444E354EAA6AD6F2454E93D9D029602D659E15928BF11F5",
+      "last_commit_hash": "965FA634A4983037635875D765BBD2A73F3E5025883E88F09F72C9C48DF55BA4",
       "data_hash": "",
-      "validators_hash": "C414E30D196E83F711DCB8161748563A1D968EC51C48F3D20141D20FE3657788",
-      "next_validators_hash": "C414E30D196E83F711DCB8161748563A1D968EC51C48F3D20141D20FE3657788",
+      "validators_hash": "6DEA966562F2F2D001110233E39AF8CDD28F2EE245E0DE4D958C2EE7BBEA718E",
+      "next_validators_hash": "6DEA966562F2F2D001110233E39AF8CDD28F2EE245E0DE4D958C2EE7BBEA718E",
       "consensus_hash": "048091BC7DDC283F77BFBF91D73C44DA58C3DF8A9CBC867405D8B7F3DAADA22F",
-      "app_hash": "1146068A69F9F0FC77B2BDD121A445D25705059F2F8A68D4E4688B5B9D8D0AD9",
+      "app_hash": "29628A861F889E1D55BD6A10F0B6883393215C4028BAC85AC4DD89D82091FE50",
       "last_results_hash": "",
       "evidence_hash": "",
-      "proposer_address": "A8FDB9C6D29B83E04EF9990107799BB598DBF3EE"
+      "proposer_address": "20F1E1742088735C093FDC79B8AABB2007F0B947"
     },
     "data": {
       "txs": null
@@ -151,28 +152,44 @@ response:
     },
     "last_commit": {
       "block_id": {
-        "hash": "787390598CF683E7B1AE1E438AAD286D436F52F06C79AC459C4375E6C14628BE",
+        "hash": "C299E482AE8ADAC6856D69EB4CD0D634592DBC5CBC216F8F7027702F3382F4D1",
         "parts": {
           "total": "1",
-          "hash": "83E6CD2DB4FCE014E38CF1BEAA3746A2A7F9D92A8093BBD9B3FF14BB78A10E32"
+          "hash": "C424BB45293D7962C07BB7CA962127C4BB302C880A3ACBD309CD8EECB25178FD"
         }
       },
       "precommits": [
         {
           "type": 2,
-          "height": "963",
+          "height": "408709",
           "round": "0",
           "block_id": {
-            "hash": "787390598CF683E7B1AE1E438AAD286D436F52F06C79AC459C4375E6C14628BE",
+            "hash": "C299E482AE8ADAC6856D69EB4CD0D634592DBC5CBC216F8F7027702F3382F4D1",
             "parts": {
               "total": "1",
-              "hash": "83E6CD2DB4FCE014E38CF1BEAA3746A2A7F9D92A8093BBD9B3FF14BB78A10E32"
+              "hash": "C424BB45293D7962C07BB7CA962127C4BB302C880A3ACBD309CD8EECB25178FD"
             }
           },
-          "timestamp": "2020-01-08T06:48:04.491292Z",
-          "validator_address": "A8FDB9C6D29B83E04EF9990107799BB598DBF3EE",
+          "timestamp": "2020-10-12T06:39:23.317752452Z",
+          "validator_address": "20F1E1742088735C093FDC79B8AABB2007F0B947",
           "validator_index": "0",
-          "signature": "utrPds1hjv5VBpfJZzZu0B4Rmz44AnWLgI4X63slekly+Z+qwuziC//rmtIUvhDAsD4A1bfMN2EgjVk/wOv4Cg=="
+          "signature": "LEukHzK8YpEupVm2KqyMCf5P9PpGd/sGSk3z1uvVMINSJdPibx/1vP2eA7mNDiAAn+G+f5tJ6VCh3nF+6hJTDQ=="
+        },
+        {
+          "type": 2,
+          "height": "408709",
+          "round": "0",
+          "block_id": {
+            "hash": "",
+            "parts": {
+              "total": "0",
+              "hash": ""
+            }
+          },
+          "timestamp": "2020-10-12T06:39:23.419121418Z",
+          "validator_address": "64BD1B7E829884A369F55AA927BEB6E29C554C92",
+          "validator_index": "1",
+          "signature": "q5Nc3Esxg9iGeUMepM84AvLHjNq6Sjyff7a0+mmMjLi0UHsiDcfIahjhNPRPZ1QA4a6qmJMjo3GHwQ988JjpAw=="
         }
       ]
     }
@@ -180,7 +197,7 @@ response:
 }
 ```
 
-### 获取指定高度的区块
+### 查询指定高度的区块
 
 参数说明：
 | 参数名称 | 类型 | 说明 |
@@ -195,7 +212,76 @@ curl http://127.0.0.1:1317/blocks/{height}
 
 response 同上
 
-### 获取最新的验证人集合
+### 查询帐户信息及余额
+
+参数说明：
+| 参数名称 | 类型 | 说明 |
+| ------- | --- | --- |
+| address | string | 帐户地址 |
+
+request:
+
+```bash
+curl http://127.0.0.1:1317/auth/accounts/{address}
+```
+
+response:
+
+```json
+{
+  "height": "408729",
+  "result": {
+    "type": "dip/Account",
+    "value": {
+      "address": "dip1dcu73lw9uqkygpde4z4z22f079skta49vxs2r0",
+      "coins": [
+        {
+          "denom": "pdip",
+          "amount": "5000399999838731000"
+        }
+      ],
+      "public_key": {
+        "type": "tendermint/PubKeySecp256k1",
+        "value": "A30tYxLMk3t/yKzGaTiPaNGvSnJ0YsXoGZWrQYPdS4+e"
+      },
+      "account_number": "11",
+      "sequence": "1",
+      "code_hash": ""
+    }
+  }
+}
+```
+
+### 查询账户余额
+
+参数说明：
+| 参数名称 | 类型 | 说明 |
+| ------- | --- | --- |
+| address | string | 帐户地址 |
+
+request:
+
+```bash
+curl http://127.0.0.1:1317/bank/balances/{address}
+```
+
+response:
+
+```json
+{
+  "height": "408743",
+  "result": [
+    {
+      "denom": "pdip", //资产名字
+      "amount": "5000399999838731000" //资产数量 1DIP=10^12pdip
+    }
+  ]
+}
+```
+
+### 查询最新的活跃验证人集合
+
+查询当前参与共识的前100名验证人集合：
 
 request:
 
@@ -209,36 +295,18 @@ response:
 {
   "height": "0",
   "result": {
-    "block_height": "959100",
+    "block_height": "408764",
     "validators": [
       {
-        "address": "dipvalcons1zu8m6mmt53n4pr5twwlmw2c5lasv9w5yqx3vvr",
-        "pub_key": "dipvalconspub1zcjduepqdkjkn8kt4wtwd3j6mtl4rxxjp0al353hdrfne66rsmcpd2q837xq5nnfjp",
-        "proposer_priority": "13325070",
-        "voting_power": "10000000"
+        "address": "dipvalcons1yrc7zapq3pe4czflm3um324myqrlpw28cap5f8",
+        "pub_key": "dipvalconspub1zcjduepqgucyytt4s4pntk87cesqs7jcagwf850fppkdkeel62a0pkc3z4qsg7ugjg",
+        "proposer_priority": "13750000",
+        "voting_power": "50000000"
       },
       {
-        "address": "dipvalcons1t5gu4fg6jm3zxr2ytw5k6azj3rflx399eztgv3",
-        "pub_key": "dipvalconspub1zcjduepqmuwh6n4z00c30njm7935hwl3vqzrdkrzw48fjkdlhxgkhh4s6p8qupd7au",
-        "proposer_priority": "5587140",
-        "voting_power": "10"
-      },
-      {
-        "address": "dipvalcons16qd3q96uzau9lzup9gtl0g5e3py8t5q0z0m4gr",
-        "pub_key": "dipvalconspub1zcjduepqnnex0jl2whugnzmr84kytykykqjd0807ncjqdkqkhkkyr7g0e7fspcfqn6",
-        "proposer_priority": "4114340",
-        "voting_power": "9902960"
-      },
-      {
-        "address": "dipvalcons1m88754ad97scehy6kkjqa5d6pws88fpxfegzft",
-        "pub_key": "dipvalconspub1zcjduepq36m84fazfs0q8rc7mj4xy5zw7psmxtrefpagy40y0nmx45px98cqwchwh2",
-        "proposer_priority": "-19693618",
-        "voting_power": "5498351"
-      },
-      {
-        "address": "dipvalcons1mf5czylhw3zcv4nhhnd0xrtwn2ah0mvasr4f0k",
-        "pub_key": "dipvalconspub1zcjduepqjgta0rptwln6jz0rz4kw6cnhcm5g4wr9epm9spkcertkq5ty88nqe329lx",
-        "proposer_priority": "-3332930",
+        "address": "dipvalcons1vj73kl5znzz2x604t25j004ku2w92nyj8xsj40",
+        "pub_key": "dipvalconspub1zcjduepqyteuk9ts78rq756w0v3kt0j0dxxt5z65k3mj5e9l0u22h5g8tw4qflpvcd",
+        "proposer_priority": "-13750000",
         "voting_power": "10000000"
       }
     ]
@@ -246,7 +314,36 @@ response:
 }
 ```
 
+### 查询token供应量
+
+查询dip供应量
+
+```bash
+curl http://127.0.0.1:1317/supply/total
+```
+
+response:
+
+```json
+{
+  "height": "408770",
+  "result": [
+    {
+      "denom": "pdip",
+      "amount": "1002707815027000890769"
+    }
+  ]
+}
+```
+
+其中 ```1 dip = 10 ^ 12 pdip```
+
 ### 通过交易hash查询交易
+
+参数说明：
+| 参数名称 | 类型 | 说明 |
+| ------- | --- | --- |
+| txhash | string | 交易hash |
 
 request:
 
@@ -258,18 +355,19 @@ response:
 
 ```json
 {
-  "height": "959150",
-  "txhash": "5E53D158DF0B117B2ED07211F8ADA27369A47C3341EF34B1F96070E0F681BF78",
-  "raw_log": "[{\"msg_index\":0,\"success\":true,\"log\":\"\"}]",
+  "height": "408786",
+  "txhash": "630DC8FE53BA9EA241BFC3EB0B65A5C91327AFB5059A37C44F3366757893F22F",
+  "raw_log": "[{\"msg_index\":0,\"success\":true,\"log\":\"\",\"events\":null}]",
   "logs": [
     {
       "msg_index": 0,
       "success": true,
-      "log": ""
+      "log": "",
+      "events": null
     }
   ],
   "gas_wanted": "200000",
-  "gas_used": "40551",
+  "gas_used": "76029",
   "events": [
     {
       "type": "message",
@@ -280,7 +378,7 @@ response:
         },
         {
           "key": "sender",
-          "value": "dip1qnazcenn7v5rdq02grglquc5kd3y4dh985rau4"
+          "value": "dip1dcu73lw9uqkygpde4z4z22f079skta49vxs2r0"
         },
         {
           "key": "module",
@@ -293,11 +391,11 @@ response:
       "attributes": [
         {
           "key": "recipient",
-          "value": "dip19vnsnnseazkyuxgkt0098gqgvfx0wxmv96479m"
+          "value": "dip1htgxvc8ewj20tlm4vf7ead7m4pllkgy63ecnp9"
         },
         {
           "key": "amount",
-          "value": "20000000pdip"
+          "value": "100000000000pdip"
         }
       ]
     }
@@ -309,12 +407,12 @@ response:
         {
           "type": "dip/MsgSend",
           "value": {
-            "from_address": "dip1qnazcenn7v5rdq02grglquc5kd3y4dh985rau4",
-            "to_address": "dip19vnsnnseazkyuxgkt0098gqgvfx0wxmv96479m",
+            "from_address": "dip1dcu73lw9uqkygpde4z4z22f079skta49vxs2r0",
+            "to_address": "dip1htgxvc8ewj20tlm4vf7ead7m4pllkgy63ecnp9",
             "amount": [
               {
                 "denom": "pdip",
-                "amount": "20000000"
+                "amount": "100000000000"
               }
             ]
           }
@@ -324,7 +422,7 @@ response:
         "amount": [
           {
             "denom": "pdip",
-            "amount": "200"
+            "amount": "200000000"
           }
         ],
         "gas": "200000"
@@ -333,15 +431,15 @@ response:
         {
           "pub_key": {
             "type": "tendermint/PubKeySecp256k1",
-            "value": "A41jr9C+YQtzn3YxgYcB6/V9SeViUSyg1SI7TMFV+cSJ"
+            "value": "A30tYxLMk3t/yKzGaTiPaNGvSnJ0YsXoGZWrQYPdS4+e"
           },
-          "signature": "hmYV0VQy38yQ2odp83g7Zq+tMicvnYgP7Uy2SnXoUGd/iFugdMwSc5+azWkKkkVQxrWdBy0n8Bn3iAvc0bR/ig=="
+          "signature": "YpD2v3LfQqWV6zGECspW4tL4imgwreVcpF/NnuZdT/Z7lb8WHZTXb03lRlO0Al8VrMT4fgTxx78IiytfjW0YMA=="
         }
       ],
-      "memo": "for test"
+      "memo": ""
     }
   },
-  "timestamp": "2020-01-08T07:00:45Z"
+  "timestamp": "2020-10-12T06:45:47Z"
 }
 ```
 
@@ -351,13 +449,664 @@ response:
 curl -X POST "http://127.0.0.1:1317/txs" -H "accept: application/json" -H "Content-Type: application/json" -d "{transaction msg}"
 ```
 
-## 合约相关API
+示例：
 
-### 查询合约代码
+```bash
+curl -X POST "http://127.0.0.1:1317/txs" \
+         -H "accept: application/json" \
+         -H "Content-Type: application/json" \
+         -d \
+' {
+ 	"tx": {
+      "msg": [
+        {
+          "type": "dip/MsgSend",
+          "value": {
+            "from_address": "dip1dcu73lw9uqkygpde4z4z22f079skta49vxs2r0",
+            "to_address": "dip1htgxvc8ewj20tlm4vf7ead7m4pllkgy63ecnp9",
+            "amount": [
+              {
+                "denom": "pdip",
+                "amount": "100000000000"
+              }
+            ]
+          }
+        }
+      ],
+      "fee": {
+        "amount": [
+          {
+            "denom": "pdip",
+            "amount": "200000000"
+          }
+        ],
+        "gas": "200000"
+      },
+      "signatures": [
+        {
+          "pub_key": {
+            "type": "tendermint/PubKeySecp256k1",
+            "value": "A30tYxLMk3t/yKzGaTiPaNGvSnJ0YsXoGZWrQYPdS4+e"
+          },
+          "signature": "dKkqnv9HKR9hfj3sQHJeH8LyrXlGJhb/r+2sobPYsFhmVXThbs2f8n9dzxBrCU2pTKqAM1NKbD1Zsi8N0/xr4w=="
+        }
+      ],
+      "memo": ""
+ 	},
+ 	"mode": "block"
+ }'
+
+```
+
+其中mode有三种：
+
+* **block**: 交易被确认后返回,平均需等待2.5秒
+* **sync**: 交易在当前节点通过后返回
+* **async**: 立即返回,不对交易进行任何处理
+  
+## mint API
+
+### 查询模块参数
+
+```bash
+curl http://127.0.0.1:1317/minting/parameters
+```
+
+response:
+
+```json
+{
+  "height": "408921",
+  "result": {
+    "mint_denom": "pdip",
+    "inflation_rate_change": "0.060000000000000000",
+    "inflation_max": "0.100000000000000000",
+    "inflation_min": "0.040000000000000000",
+    "goal_bonded": "0.670000000000000000",
+    "blocks_per_year": "6311520",
+    "max_provisions": "350000000000000000000.000000000000000000"
+  }
+}
+```
+
+### 查询通胀率
+
+```bash
+curl http://127.0.0.1:1317/minting/inflation
+```
+
+response:
+
+```json
+{
+  "height": "408944",
+  "result": "0.043538317953224679" //通胀率4.35%
+}
+```
+
+### 查询年供应量
+
+```bash
+curl http://127.0.0.1:1317/minting/annual-provisions
+```
+
+response:
+
+```json
+{
+  "height": "408997",
+  "result": "43656739809727520024.473279048714163961"
+}
+```
+
+## staking 相关
+
+### 查询staking全局参数
+
+```bash
+curl http://127.0.0.1:1317/staking/parameters
+```
+
+response:
+
+```json
+{
+  "height": "409004",
+  "result": {
+    "next_extending_time": "2021-09-18T12:44:16.516636Z", // 下一次增加验证人的时间
+    "bond_denom": "pdip",
+    "unbonding_time": "1209600000000000", // 解除绑定需要的时间，单位为秒
+    "max_lever": "20.000000000000000000", // 验证人质押最大杠杆率
+    "max_validators": 100, // 验证人最大数量
+    "max_validators_extending_limit": 300, // 验证人数量上限
+    "max_validators_extending_speed": 10, // 每年增加的验证人数量
+    "max_entries": 7
+  }
+}
+```
+
+### 查询staking pool
+
+```bash
+curl http://127.0.0.1:1317/staking/pool
+```
+
+response:
+
+```json
+{
+  "height": "409030",
+  "result": {
+    "not_bonded_tokens": "9999000000000000000", // staking pool中未质押的token数量
+    "bonded_tokens": "60000000000000000000" // staking pool中总质押的token数量
+  }
+}
+```
+
+### 查询指定地址的所有委托信息
+
+参数说明：
+| 参数名称 | 类型 | 说明 |
+| ------- | --- | --- |
+| address | string | 账户地址 |
+
+以地址```dip1dcu73lw9uqkygpde4z4z22f079skta49vxs2r0``` 为例
+
+```bash
+# curl http://127.0.0.1:1317/staking/delegators/{address}/delegations
+
+curl http://127.0.0.1:1317/staking/delegators/dip1dcu73lw9uqkygpde4z4z22f079skta49vxs2r0/delegations
+```
+
+response:
+
+```json
+{
+  "height": "409067",
+  "result": [
+    {
+      "delegator_address": "dip1dcu73lw9uqkygpde4z4z22f079skta49vxs2r0", // 质押者地址
+      "validator_address": "dipvaloper1dcu73lw9uqkygpde4z4z22f079skta49w2c089", // 验证人地址
+      "shares": "5000000000000000000.000000000000000000", // 质押所得的股份
+      "balance": {
+        "denom": "pdip",
+        "amount": "4999500000000000000" // 余额
+      }
+    }
+  ]
+}
+```
+
+其中```balance```字段即委托的pdip资产数量。
+
+### 查询正在解除委托的信息
+
+参数说明：
+| 参数名称 | 类型 | 说明 |
+| ------- | --- | --- |
+| address | string | 账户地址 |
+
+以地址```dip1dcu73lw9uqkygpde4z4z22f079skta49vxs2r0``` 为例
+
+```bash
+# curl http://127.0.0.1:1317/staking/delegators/{address}/unbonding_delegations
+curl http://127.0.0.1:1317/staking/delegators/dip1dcu73lw9uqkygpde4z4z22f079skta49vxs2r0/unbonding_delegations
+```
+
+response:
+
+```json
+{
+  "height": "297565",
+  "result": [
+    {
+      "delegator_address": "dip1dcu73lw9uqkygpde4z4z22f079skta49vxs2r0",// 质押者地址
+      "validator_address": "dipvaloper13dwwe6pv92ve9uy8k2u7006a9fd9jwc6nr55u4",// 验证人地址
+      "entries": [
+        {
+          "creation_height": "297562",// 质押所在高度
+          "completion_time": "2020-05-08T02:21:26.09861357Z",// 质押在该时间后可到账
+          "initial_balance": "100",
+          "balance": "100"
+        },
+        {
+          "creation_height": "297565",
+          "completion_time": "2020-05-08T02:21:42.274943985Z",
+          "initial_balance": "1000",
+          "balance": "1000"
+        }
+      ]
+    }
+  ]
+}
+```
+
+### 查询指定地址相关的staking交易
+
+参数说明：
+| 参数名称 | 类型 | 说明 |
+| ------- | --- | --- |
+| address | string | 账户地址 |
 
 request:
 
 ```bash
+# curl http://127.0.0.1:1317/staking/delegators/{address}/txs
+
+curl http://127.0.0.1:1317/staking/delegators/dip1dcu73lw9uqkygpde4z4z22f079skta49vxs2r0/txs
+```
+
+response:
+
+```json
+```
+
+### 查询指定地址绑定(委托)的所有验证人
+
+参数说明：
+| 参数名称 | 类型 | 说明 |
+| ------- | --- | --- |
+| address | string | 账户地址 |
+
+request:
+
+```bash
+#curl http://127.0.0.1:1317/staking/delegators/{address}/validators
+
+
+curl http://127.0.0.1:1317/staking/delegators/dip1dcu73lw9uqkygpde4z4z22f079skta49vxs2r0/validators
+```
+
+response:
+
+```json
+{
+  "height": "409189",
+  "result": [
+    {
+      "operator_address": "dipvaloper1dcu73lw9uqkygpde4z4z22f079skta49w2c089",
+      "consensus_pubkey": "dipvalconspub1zcjduepqwez78elxpkp6rjn3qq5r9qku30u3uw8mhadxqdgghhhrl3hxjn3su4qpft",
+      "jailed": true,
+      "status": 1,
+      "tokens": "9999000000000000000",
+      "delegator_shares": "10000000000000000000.000000000000000000",
+      "description": {
+        "moniker": "sun",
+        "identity": "B466EC1BAB817E35",
+        "website": "",
+        "details": ""
+      },
+      "unbonding_height": "199487",
+      "unbonding_time": "2020-10-14T01:05:44.164508006Z",
+      "commission": {
+        "commission_rates": {
+          "rate": "0.100000000000000000",
+          "max_rate": "0.500000000000000000",
+          "max_change_rate": "0.500000000000000000"
+        },
+        "update_time": "2020-09-29T07:06:40.788454941Z"
+      },
+      "min_self_delegation": "1",
+      "self_delegation": "5000000000000000000.000000000000000000"
+    }
+  ]
+}
+```
+
+### 查询指定地址和指定验证的人委托信息
+
+参数说明：
+| 参数名称 | 类型 | 说明 |
+| ------- | --- | --- |
+| address | string | 账户地址 |
+| ValidatorAddress | string | 验证人地址 |
+
+request:
+
+```bash
+# curl http://127.0.0.1:1317/staking/delegators/{address}/delegations/{ValidatorAddress}
+
+curl http://127.0.0.1:1317/staking/delegators/dip1dcu73lw9uqkygpde4z4z22f079skta49vxs2r0/delegations/dipvaloper1dcu73lw9uqkygpde4z4z22f079skta49w2c089 
+```
+
+response:
+
+```json
+{
+  "height": "409212",
+  "result": {
+    "delegator_address": "dip1dcu73lw9uqkygpde4z4z22f079skta49vxs2r0",
+    "validator_address": "dipvaloper1dcu73lw9uqkygpde4z4z22f079skta49w2c089",
+    "shares": "5000000000000000000.000000000000000000",
+    "balance": {
+      "denom": "pdip",
+      "amount": "4999500000000000000"
+    }
+  }
+}
+```
+
+### 查询所有的验证人
+
+```bash
+curl http://127.0.0.1:1317/staking/validators
+```
+
+response:
+
+```json
+{
+  "height": "409215",
+  "result": [
+    {
+      "operator_address": "dipvaloper1d0mhm9a2t8u0fmh0mql2mjcaexq0fdl9q5s638",
+      "consensus_pubkey": "dipvalconspub1zcjduepqgucyytt4s4pntk87cesqs7jcagwf850fppkdkeel62a0pkc3z4qsg7ugjg",
+      "jailed": false,
+      "status": 2,
+      "tokens": "50000000000000000000",
+      "delegator_shares": "50000000000000000000.000000000000000000",
+      "description": {
+        "moniker": "dipd-official",
+        "identity": "",
+        "website": "",
+        "details": ""
+      },
+      "unbonding_height": "0",
+      "unbonding_time": "1970-01-01T00:00:00Z",
+      "commission": {
+        "commission_rates": {
+          "rate": "0.100000000000000000",
+          "max_rate": "0.200000000000000000",
+          "max_change_rate": "0.100000000000000000"
+        },
+        "update_time": "2020-09-18T06:44:16.516854Z"
+      },
+      "min_self_delegation": "1",
+      "self_delegation": "50000000000000000000.000000000000000000"
+    },
+    {
+      "operator_address": "dipvaloper1dmnuy5vj0hmkg2usdhm8c8agdrqutmr293f7kq",
+      "consensus_pubkey": "dipvalconspub1zcjduepqyteuk9ts78rq756w0v3kt0j0dxxt5z65k3mj5e9l0u22h5g8tw4qflpvcd",
+      "jailed": false,
+      "status": 2,
+      "tokens": "10000000000000000000",
+      "delegator_shares": "10000000000000000000.000000000000000000",
+      "description": {
+        "moniker": "highstreet",
+        "identity": "",
+        "website": "http://www.highstreet.com",
+        "details": "highsteet is a fashion company"
+      },
+      "unbonding_height": "0",
+      "unbonding_time": "1970-01-01T00:00:00Z",
+      "commission": {
+        "commission_rates": {
+          "rate": "0.100000000000000000",
+          "max_rate": "0.200000000000000000",
+          "max_change_rate": "0.010000000000000000"
+        },
+        "update_time": "2020-09-18T08:14:07.092281418Z"
+      },
+      "min_self_delegation": "100",
+      "self_delegation": "10000000000000000000.000000000000000000"
+    }
+  ]
+}
+```
+
+### 根据验证人地址，获取验证人信息
+
+参数说明：
+| 参数名称 | 类型 | 说明 |
+| ------- | --- | --- |
+| ValidatorAddress | string | 验证人地址 |
+
+```bash
+# curl http://127.0.0.1:1317/staking/validators/{ValidatorAddress}
+
+curl http://127.0.0.1:1317/staking/validators/dipvaloper1d0mhm9a2t8u0fmh0mql2mjcaexq0fdl9q5s638
+```
+
+response:
+
+```json
+{
+  "height": "409228",
+  "result": {
+    "operator_address": "dipvaloper1d0mhm9a2t8u0fmh0mql2mjcaexq0fdl9q5s638",
+    "consensus_pubkey": "dipvalconspub1zcjduepqgucyytt4s4pntk87cesqs7jcagwf850fppkdkeel62a0pkc3z4qsg7ugjg",
+    "jailed": false,
+    "status": 2,
+    "tokens": "50000000000000000000", // 总token数量
+    "delegator_shares": "50000000000000000000.000000000000000000", // 总股份数量
+    "description": {
+      "moniker": "dipd-official",
+      "identity": "",
+      "website": "",
+      "details": ""
+    },
+    "unbonding_height": "0",
+    "unbonding_time": "1970-01-01T00:00:00Z",
+    "commission": {
+      "commission_rates": {
+        "rate": "0.100000000000000000",
+        "max_rate": "0.200000000000000000",
+        "max_change_rate": "0.100000000000000000"
+      },
+      "update_time": "2020-09-18T06:44:16.516854Z"
+    },
+    "min_self_delegation": "1",
+    "self_delegation": "50000000000000000000.000000000000000000" // 自抵押数量
+  }
+}
+```
+
+## distribution API
+
+### 查询模块参数
+
+```bash
+curl http://127.0.0.1:1317/distribution/parameters
+```
+
+response:
+
+```json
+{
+  "height": "0",
+  "result": {
+    "community_tax": "0.010000000000000000",
+    "base_proposer_reward": "0.010000000000000000",
+    "bonus_proposer_reward": "0.040000000000000000",
+    "withdraw_addr_enabled": true
+  }
+}
+```
+
+### 查询指定地址的所有委托收益
+
+参数说明：
+| 参数名称 | 类型 | 说明 |
+| ------- | --- | --- |
+| address | string | 账户地址 |
+
+```bash
+# curl http://127.0.0.1:1317/distribution/delegators/{address}/rewards
+
+curl http://127.0.0.1:1317/distribution/delegators/dip1dcu73lw9uqkygpde4z4z22f079skta49vxs2r0/rewards
+```
+
+response:
+
+```json
+{
+  "height": "0",
+  "result": {
+    "rewards": [
+      {
+        "validator_address": "dipvaloper1dcu73lw9uqkygpde4z4z22f079skta49w2c089",
+        "reward": [
+          {
+            "denom": "pdip",
+            "amount": "4758646048972463.861500000000000000"
+          }
+        ]
+      }
+    ],
+    "total": [
+      {
+        "denom": "pdip",
+        "amount": "4758646048972463.861500000000000000"
+      }
+    ]
+  }
+}
+```
+
+### 指定地址和验证人地址，查询委托收益
+
+参数说明：
+| 参数名称 | 类型 | 说明 |
+| ------- | --- | --- |
+| address | string | 账户地址 |
+| ValidatorAddress | string | 验证人地址 |
+
+request: 
+
+```bash
+# curl http://127.0.0.1:1317/distribution/delegators/{address}/rewards/{ValidatorAddress}
+
+curl http://127.0.0.1:1317/distribution/delegators/dip1dcu73lw9uqkygpde4z4z22f079skta49vxs2r0/rewards/dipvaloper1dcu73lw9uqkygpde4z4z22f079skta49w2c089
+```
+
+response:
+
+```json
+{
+  "height": "0",
+  "result": [
+    {
+      "denom": "pdip",
+      "amount": "4758646048972463.861500000000000000"
+    }
+  ]
+}
+```
+
+### 查询收益的取现地址
+
+参数说明：
+| 参数名称 | 类型 | 说明 |
+| ------- | --- | --- |
+| delegatorAddr | string | 委托人的账户地址 |
+
+request:
+
+```bash
+# curl http://127.0.0.1:1317/distribution/delegators/{delegatorAddr}/withdraw_address
+
+
+curl http://127.0.0.1:1317/distribution/delegators/dip1dcu73lw9uqkygpde4z4z22f079skta49vxs2r0/withdraw_address
+```
+
+response:
+
+```json
+{
+  "height": "409275",
+  "result": "dip1dcu73lw9uqkygpde4z4z22f079skta49vxs2r0"
+}
+```
+
+### 查询验证人收益
+
+参数说明：
+| 参数名称 | 类型 | 说明 |
+| ------- | --- | --- |
+| validatorAddr | string | 验证人地址 |
+
+request:
+
+```bash
+# curl http://127.0.0.1:1317/distribution/validators/{validatorAddr}
+
+curl http://127.0.0.1:1317/distribution/validators/dipvaloper13dwwe6pv92ve9uy8k2u7006a9fd9jwc6nr55u4
+```
+
+response:
+
+```json
+{
+  "height": "0",
+  "result": {
+    "operator_address": "dip13dwwe6pv92ve9uy8k2u7006a9fd9jwc6gzqx0e",
+    "self_bond_rewards": [
+      {
+        "denom": "pdip",
+        "amount": "24600830777753870.939086144470712200"
+      }
+    ],
+    "val_commission": [
+      {
+        "denom": "pdip",
+        "amount": "207906177334510092.043971528899436676"
+      }
+    ]
+  }
+}
+```
+
+### 查询验证人自委托的金收益
+
+参数说明：
+| 参数名称 | 类型 | 说明 |
+| ------- | --- | --- |
+| validatorAddr | string | 验证人地址 |
+
+request:
+
+```bash
+# curl http://127.0.0.1:1317/distribution/validators/{validatorAddr}/rewards
+
+curl http://127.0.0.1:1317/distribution/validators/dipvaloper1dcu73lw9uqkygpde4z4z22f079skta49w2c089/rewards
+```
+
+response:
+
+```json
+{
+  "height": "0",
+  "result": [
+    {
+      "denom": "pdip",
+      "amount": "4758646048972463.861500000000000000"
+    }
+  ]
+}
+```
+
+## 提案相关API
+
+### 查询所有提案
+
+```bash
+curl http://127.0.0.1:1317/gov/proposals
+```
+
+## 合约相关API
+
+### 查询合约代码
+
+参数说明：
+| 参数名称 | 类型 | 说明 |
+| ------- | --- | --- |
+| address | string | 合约账户地址 |
+
+request:
+
+```bash
+# curl http://localhost:1317/vm/code/{address}
+
 curl http://localhost:1317/vm/code/dip19lhydp6k59c66x2vp3h4ua8r8535uh6dlmex6y
 ```
 
@@ -395,18 +1144,17 @@ response:
 可通过```dipcli```构造payload，，如下构造一个创建合约的交易消息，不做签名
 
 ```bash
-dipcli vm create --code_file=./demo/demo.bc --abi_file=./demo/demo.abi \
---from $(dipcli keys show -a alice) --amount=0pdip --args '' \
+dipcli vm create --code_file=./demo/demo.bc \
+--from $(dipcli keys show -a alice) --amount=0pdip \
 --gas=1000000 --generate-only
 ```
-
 
 request:
 
 ```bash
 curl -X POST localhost:1317/vm/estimate_gas -d '
 {
-	"from": "dip13f5tmt88z5lkx8p45hv7a327nc0tpjzlwsq35e",
+	"from": "dip1dcu73lw9uqkygpde4z4z22f079skta49vxs2r0",
 	"to": "",
 	"payload": "608060405234801561001057600080fd5b506509184e72a0006000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002081905550610344806100696000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806327e235e31461005c57806370a08231146100b3578063a9059cbb1461010a575b600080fd5b34801561006857600080fd5b5061009d600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610162565b6040518082815260200191505060405180910390f35b3480156100bf57600080fd5b506100f4600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061017a565b6040518082815260200191505060405180910390f35b610148600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291905050506101c2565b604051808215151515815260200191505060405180910390f35b60006020528060005260406000206000915090505481565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b6000816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020541015151561021157600080fd5b816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540392505081905550816000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a360019050929150505600a165627a7a7230582015481e18f5439ee76271037928d88d33cc7d7d4bf1e5e801b78db9e902f255560029",
 	"amount": {
@@ -420,9 +1168,9 @@ response:
 
 ```bash
 {
-  "height": "473",
+  "height": "409350",
   "result": {
-    "Gas": "240517",
+    "Gas": "247832",
     "Res": "608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806327e235e31461005c57806370a08231146100b3578063a9059cbb1461010a575b600080fd5b34801561006857600080fd5b5061009d600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610162565b6040518082815260200191505060405180910390f35b3480156100bf57600080fd5b506100f4600480360381019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061017a565b6040518082815260200191505060405180910390f35b610148600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291905050506101c2565b604051808215151515815260200191505060405180910390f35b60006020528060005260406000206000915090505481565b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b6000816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020541015151561021157600080fd5b816000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008282540392505081905550816000808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600082825401925050819055508273ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff167fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef846040518082815260200191505060405180910390a360019050929150505600a165627a7a7230582015481e18f5439ee76271037928d88d33cc7d7d4bf1e5e801b78db9e902f255560029"
   }
 }
@@ -432,8 +1180,6 @@ response:
 ```
 
 #### 调用合约
-
-调用合约的payload要根据调用方法的abi来构造，可参考代码 https://github.com/Dipper-Labs/Dipper-Protocol/blob/develop/modules/vm/client/cli/query.go 的GetCmdQueryCallFee函数
 
 request:
 
