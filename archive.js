@@ -3,7 +3,7 @@ require('shelljs/global');
 var path = require('path');
 var fs = require('fs');
 var archiver = require('archiver');
-var archiveFilePath = path.join(__dirname, 'nch-docs.zip');
+var archiveFilePath = path.join(__dirname, 'dipper-docs.zip');
 var archive = archiver('zip');
 var ora = require('ora');
 
@@ -25,5 +25,5 @@ archive.on('error', function (err) {
 });
 
 archive.pipe(output);
-archive.directory('../docs/.vuepress/dist', './dist', {date: new Date()});
+archive.directory('docs/.vuepress/dist', './dipper-docs', {date: new Date()});
 archive.finalize();
