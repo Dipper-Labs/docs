@@ -4,6 +4,7 @@
 
 * [如何安装dip节点程序](../software/how-to-install.md)
 * [如何加入测试网](../get-started/how-to-join-testnet.md)
+* [如何加入主网](../get-started/how-to-join-mainnet.md)
 * [如何申领测试token](../get-started/testcoin.md)
 * [如何创建验证人](../get-started/how-to-become-validator.md)
 * [如何抵押和委托](../get-started/how-to-delegate.md)

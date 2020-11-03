@@ -9,12 +9,12 @@ DipperNetwork区块链网络需要一组验证人来维护网络的安全。 验
 
 ## 1. 安装并部署全节点
 
-请首先按照[教程](./how-to-join-testnet.md)，部署测试网的全节点，并且确保同步到了最新区块高度。
+请首先按照[教程](./how-to-join-mainnet.md)，部署主网全节点，并且确保同步到了最新区块高度。
 
 ## 2. 设置dipcli环境变量
 
 ``` bash
-dipcli config chain-id dip-testnet
+dipcli config chain-id dipperhub
 dipcli config output json
 dipcli config indent true
 dipcli config trust-node true
@@ -29,11 +29,7 @@ dipcli keys add <key_name>
 # 按照提示输入加密账号用的密码(后续执行各种交易都需要用该密码)，将命令返回的信息谨慎保存
 ```
 
-## 4. 获得测试token
-
-获得测试token， 请参照[这里](./testcoin.md)
-
-## 5. 检查节点同步情况
+## 4. 检查节点同步情况
 
 只有当节点同步到最新区块后，才可能执行下一步操作，创建验证人。
 
@@ -44,7 +40,7 @@ dipcli status | grep catching_up
 
 如果返回```"catching_up": false```，表明已经同步到最新。
 
-## 6.创建验证人
+## 5.创建验证人
 
 ```bash
 dipcli tx staking create-validator \
@@ -261,10 +257,10 @@ dipcli tx staking unbond dipvaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj 10000
 默认参数如下:
 
 ```
-signed_blocks_window: 10000
-min_signed_per_window: 50%
-slash_fraction_downtime: 0.05%
-downtime_jail_duration: 2天
+signed_blocks_window: 34560
+min_signed_per_window: 70%
+slash_fraction_downtime: 0.03%
+downtime_jail_duration: 36小时
 ```
 
 #### 2. 恶意投票
@@ -274,7 +270,7 @@ downtime_jail_duration: 2天
 双签的惩罚默认参数:
 
 ```
-slash_fraction_double_sign:0.5 %
+slash_fraction_double_sign: 1%
 ```
 
 ## 更多资源
