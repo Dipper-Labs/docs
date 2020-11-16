@@ -50,7 +50,7 @@ make install
 dipd version
 testnet-v4.0.0-0
 
-dip_sh dipcli version
+dipcli version
 testnet-v4.0.0-0
 ```
 
@@ -75,7 +75,7 @@ make install
 dipd version
 mainnet-v1.0.0-0
 
-dip_sh dipcli version
+dipcli version
 mainnet-v1.0.0-0
 ```
 
