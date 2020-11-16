@@ -19,4 +19,4 @@ DipperNetwork致力于打造高性能去中心化的金融网络，让金融惠�
 * [交易费用代付](../advanced/fee-payment.md)
 * [智能合约教程](../advanced/contract.md)
 * [常见问题](../advanced/Q&A.md)
-* [主网映射](../advanced/UserGuide.md)
+* [主网映射](../advanced/DIP_ERC20_mapping.md)
