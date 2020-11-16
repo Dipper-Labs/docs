@@ -65,7 +65,7 @@ Repeat the passphrase:
   "type": "local",
   "address": "dip1kku6g066hzl6pxm7ldf8ydl2wn7damy3q3awl8",
   "pubkey": "dippub1addwnpepqdfwplcx7gq8grqaeq9tqc45799jyd4qa2qgspx8r03vwk5ueppu7tknz8w",
-  "mnemonic": "spirit uncle slender inform fit ignore pretty lawn link depart spike panic hen tip raw jewel armor ensure oak success again swallow wing obscure"
+  "mnemonic": "spirit uncle slender inform fit ignore pretty law ink depart spike panic hen obscure"
 }
 
 mnemonic为助记词
