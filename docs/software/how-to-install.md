@@ -30,12 +30,12 @@ sudo apt-get install git gcc cmake make golang-statik
 测试网和主网的安装路径是一个，所以会相互覆盖，安装前确认好要安装的测试网还是主网
 
 ### 安装测试网
-当前测试网最新的release版本为testnet-v4.0.0
+当前测试网最新的release版本为mainnet-v1.0.1
 
 ```bash
 # 获取dip 源码
 git clone -b testnet https://github.com/Dipper-Labs/Dipper-Protocol.git
-cd Dipper-Protocol && git checkout testnet-v4.0.0
+cd Dipper-Protocol && git checkout mainnet-v1.0.1
 
 # 设置goproxy(make install过程会下载依赖的go模块,设置适合自己的代理,大陆用户可以设置以下代理来加快下载速度)
 export GOPROXY=https://mirrors.aliyun.com/goproxy/
@@ -48,19 +48,19 @@ make install
 
 ```bash
 dipd version
-testnet-v4.0.0-0
+mainnet-v1.0.1-0
 
 dipcli version
-testnet-v4.0.0-0
+mainnet-v1.0.1-0
 ```
 
 ### 安装主网
-当前主网最新的release版本为mainnet-v1.0.0
+当前主网最新的release版本为mainnet-v1.0.1
 
 ```bash
 # 获取dip 源码
 git clone -b mainnet https://github.com/Dipper-Labs/Dipper-Protocol.git
-cd Dipper-Protocol && git checkout mainnet-v1.0.0
+cd Dipper-Protocol && git checkout mainnet-v1.0.1
 
 # 设置goproxy(make install过程会下载依赖的go模块,设置适合自己的代理,大陆用户可以设置以下代理来加快下载速度)
 export GOPROXY=https://mirrors.aliyun.com/goproxy/
@@ -73,10 +73,10 @@ make install
 
 ```bash
 dipd version
-mainnet-v1.0.0-0
+mainnet-v1.0.1-0
 
 dipcli version
-mainnet-v1.0.0-0
+mainnet-v1.0.1-0
 ```
 
 到这时，dip节点程序就安装完成了。接下来，你可以尝试加入测试网或者主网，点击[测试网](../get-started/how-to-join-testnet.md)，[主网](../get-started/how-to-join-mainnet.md)

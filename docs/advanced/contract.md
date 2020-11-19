@@ -8,7 +8,7 @@
 
 ```bash
 git clone https://github.com/Dipper-Labs/Dipper-Protocol.git
-cd Dipper-Protocol && git checkout testnet-v4.0.0
+cd Dipper-Protocol && git checkout testnet-v4.0.1
 
 make install
 ```

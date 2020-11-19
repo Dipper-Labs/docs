@@ -43,7 +43,7 @@ response：
     "name": "dip",
     "server_name": "dipd",
     "client_name": "dipcli",
-    "version": "testnet-v4.0.0-8-g1b877b9",
+    "version": "testnet-v4.0.1-8-g1b877b9",
     "app_version": "0",
     "commit": "1b877b9df930926e756e3a3f026e9b69bd8db0ce",
     "build_tags": "netgo",

@@ -6,8 +6,8 @@ Recommended server configuration:
 
 * CPU cores: 2
 * RAM: 4GB+
-* Disk: 100GB+ SSD
-* OS: Ubuntu 18.04
+* Disk: 200GB+ SSD
+* OS: Ubuntu 20.04
 * Bandwidth:10Mbps
 * Open ports: 26656 and 26657
 
@@ -18,7 +18,7 @@ To install and configure go, click [here](../software/go-install.md)
 ```bash
 # Get dip source code
 git clone https://github.com/Dipper-Labs/Dipper-Protocol.git
-cd Dipper-Protocol && git checkout testnet-v4.0.0
+cd Dipper-Protocol && git checkout testnet-v4.0.1
 
 # Install statik
 sudo apt-get update
