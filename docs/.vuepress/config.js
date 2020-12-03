@@ -110,7 +110,6 @@ function genSidebarConfig (module, title) {
                 collapsable: false,
                 children: [
                     '',
-                    'generate-genesis-file',
                     'how-to-join-testnet',
                     'how-to-become-validator',
                     'how-to-delegate'

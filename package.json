@@ -7,10 +7,10 @@
   "devDependencies": {
     "archiver": "^3.0.0",
     "ora": "^3.0.0",
-    "shelljs": "^0.8.2"
+    "shelljs": "^0.8.4"
   },
   "dependencies": {
-    "vuepress": "^1.2.0",
+    "vuepress": "^1.7.1",
     "web3": "^1.2.4"
   }
 }
