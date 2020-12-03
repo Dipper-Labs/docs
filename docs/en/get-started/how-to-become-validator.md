@@ -193,7 +193,7 @@ dipcli tx staking unbond dipvaloper1gghjut3ccd8ay0zduzj64hwre2fxs9ldmqhffj 10000
 <font color=red>Warning</font>
 
  Be carefully,```validator-addr```is ```operator_address``` of the Validator.
- To learn more about unbond, withdraw rewards and commission, [click here](../software/dipcli##Validators).
+ To learn more about unbond, withdraw rewards and commission, [click here](../software/dipcli.md###查询验证人列表).
 
 
 ## 10. About validator rewards and punishments

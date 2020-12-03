@@ -189,7 +189,7 @@ response:
 
 #### Call contracts
 
-You need to create payload according to the abi of call methods. You can refer to function of GetCmdQueryCallFee in https://github.com/Dipper-Labs/Dipper-Protocol/Dipper-Protocol/blob/develop/modules/vm/client/cli/query.go 
+You need to create payload according to the abi of call methods. You can refer to function of GetCmdQueryCallFee in https://github.com/Dipper-Labs/Dipper-Protocol/blob/master/app/v0/vm/client/cli/query.go
 
 request:
 ```bash
