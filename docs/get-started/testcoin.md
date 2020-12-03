@@ -13,7 +13,7 @@
 
 ## 如何查看是否获得测试Token
 
-**方法1** 通过区块浏览器查看```https://explorer.dippernetwork.com/account/<address>``` 其中```<address>```为你的dip地址
+**方法1** 通过区块浏览器查看```https://explorer.testnet.dippernetwork.com/account/<address>``` 其中```<address>```为你的dip地址
 
 **方法2** 通过dipcli查看, 使用下列命令进行查看，address为你的dip地址
 
