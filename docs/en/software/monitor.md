@@ -78,6 +78,6 @@ Hit "Save & Test" to finish adding the DataSource.
 
 * Add a Dashboard
 
-Start importing by clicking on the + button at the top of the column on the left. Paste in the JSON from [here](https://github.com/iavl/monitor/blob/master/dip_dashboard.json) and load it.
+Start importing by clicking on the + button at the top of the column on the left. Paste in the JSON from [here](https://github.com/Dipper-Labs/monitor/blob/master/dip_dashboard.json) and load it.
 
 ![](../../images/monitor-2.jpg)

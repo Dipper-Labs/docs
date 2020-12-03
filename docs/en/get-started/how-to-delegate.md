@@ -241,4 +241,4 @@ dipcli tx staking unbond dipvaloper133vmttt6n49jac5zn3z0klcpe7m8qluglfu58z 100pd
 
 ```
 
-To learn more about unbond, withdraw rewards and commission, [click here](../software/dipcli##Validators).
+To learn more about unbond, withdraw rewards and commission, [click here](../software/dipcli.md##Validators).
